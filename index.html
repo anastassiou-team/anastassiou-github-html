@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anastassiou Lab - Cedars-Sinai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Anastassiou Lab</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Anastassiou Lab</h1>
+                <p class="hero-subtitle">Understanding cellular composition and brain circuit function in health and disease</p>
+                <p class="hero-description">
+                    We use a multidisciplinary approach blending biology, engineering, computer science and statistics 
+                    to understand how cellular makeup impacts neural activity in the brain, in health or disease.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#team" class="btn btn-primary">Meet the Team</a>
+                    <a href="#publications" class="btn btn-secondary">Our Publications</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="animation-container">
+                    <video class="hero-animation" autoplay muted loop playsinline>
+                        <source src="animation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="animation-overlay">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About the Lab</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        The Anastassiou Laboratory studies how the molecular and cellular composition of neurons 
+                        translates to their phenotype and how these properties combine in brain circuits to produce 
+                        function or, in the case of disease, dysfunction.
+                    </p>
+                    <p>
+                        We have a broad background in multimodal cellular data (electrophysiology, anatomy, transcriptomics) 
+                        and the development of state-of-the-art computational workflows (statistical learning, optimization 
+                        and simulation) to understand cellular activity in behavior and disease.
+                    </p>
+                    <p>
+                        Uniquely, this work includes human brain tissue, both as a byproduct from surgery as well as 
+                        from model systems such as human pluripotent stem cells. We successfully pursue collaborations 
+                        with clinicians to translate cellular and circuit findings to gain a better understanding of 
+                        diseases such as epilepsy and Parkinson's disease, as well as development of improved therapies.
+                    </p>
+                </div>
+                <div class="affiliations">
+                    <h3>Affiliations</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-hospital"></i>
+                            <a href="https://www.cedars-sinai.org/locations/neurosurgery-102.html" target="_blank">
+                                Cedars-Sinai Neurosurgery Department
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-brain"></i>
+                            <a href="https://www.cedars-sinai.org/locations/neurology-280.html" target="_blank">
+                                Cedars-Sinai Neurology Department
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-microscope"></i>
+                            <a href="https://www.cedars-sinai.edu/health-sciences-university/research/departments-institutes/biomedical-sciences/neural-science.html" target="_blank">
+                                Cedars-Sinai Center for Neural Science and Medicine
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-dna"></i>
+                            <a href="https://www.cedars-sinai.edu/health-sciences-university/research/departments-institutes/biomedical-sciences.html" target="_blank">
+                                Cedars-Sinai Biomedical Sciences
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Lab Members</h2>
+            <div class="team-grid">
+                <!-- Principal Investigator -->
+                <div class="team-member featured" data-member="costas">
+                    <div class="member-photo">
+                        <img src="costas-profile.jpg" alt="Costas Anastassiou, PhD - Principal Investigator">
+                    </div>
+                    <div class="member-info">
+                        <h3>Costas Anastassiou, PhD</h3>
+                        <p class="member-title">Principal Investigator</p>
+                        <p class="member-bio">
+                            Large biological datasets nowadays offer impeccable, cellular resolution in the makeup of the brain. 
+                            Yet, how this cellular makeup impacts neural activity in the brain, in health or disease, 
+                            remains largely enigmatic.
+                        </p>
+                        <div class="member-expertise">
+                            <span class="expertise-tag">Neuroscience</span>
+                            <span class="expertise-tag">Computational Biology</span>
+                            <span class="expertise-tag">Electrophysiology</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Research Scientist -->
+                <div class="team-member" data-member="philip">
+                    <div class="member-photo">
+                        <img src="https://via.placeholder.com/150x150/3498db/FFFFFF?text=PW" alt="Philip Wong - Senior Research Scientist">
+                    </div>
+                    <div class="member-info">
+                        <h3>Philip Wong</h3>
+                        <p class="member-title">Postdoctoral Fellow</p>
+                        <p class="member-bio">
+                            Leading computational neuroscience projects at the level of human cellular and network biophysics and dynamics 
+                            at Cedars-Sinai Medical Center.
+                        </p>
+                        <div class="member-expertise">
+                            <span class="expertise-tag">Computational Neuroscience</span>
+                            <span class="expertise-tag">Biophysics</span>
+                            <span class="expertise-tag">Network Dynamics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member" data-member="member2">
+                    <div class="member-photo">
+                        <img src="https://via.placeholder.com/150x150/FF6B6B/FFFFFF?text=GS" alt="Graduate Student">
+                    </div>
+                    <div class="member-info">
+                        <h3>Alex Rodriguez</h3>
+                        <p class="member-title">Graduate Student</p>
+                        <p class="member-bio">
+                            Investigating the role of cellular diversity in neural circuit function 
+                            using electrophysiological and transcriptomic approaches.
+                        </p>
+                        <div class="member-expertise">
+                            <span class="expertise-tag">Electrophysiology</span>
+                            <span class="expertise-tag">Transcriptomics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member" data-member="member3">
+                    <div class="member-photo">
+                        <img src="https://via.placeholder.com/150x150/4ECDC4/FFFFFF?text=RA" alt="Research Associate">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Emily Watson</h3>
+                        <p class="member-title">Research Associate</p>
+                        <p class="member-bio">
+                            Developing novel electrical stimulation protocols for therapeutic 
+                            applications in neurological disorders.
+                        </p>
+                        <div class="member-expertise">
+                            <span class="expertise-tag">Electrical Stimulation</span>
+                            <span class="expertise-tag">Therapeutics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Recent Publications</h2>
+            <div class="publications-grid" id="publicationsGrid">
+                <!-- Publications will be populated by JavaScript -->
+            </div>
+            <div class="publications-cta">
+                <a href="https://scholar.google.com/citations?hl=en&user=FlAvpWkAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-graduation-cap"></i>
+                    View Full Google Scholar Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="github">
+        <div class="container">
+            <h2 class="section-title">GitHub</h2>
+            <div class="github-content">
+                <div class="repos-grid" id="reposGrid">
+                    <!-- Repository cards will be populated by JavaScript -->
+                </div>
+                <div class="github-cta">
+                    <a href="https://github.com/anastassiou-team" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        View All Repositories
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Location</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Cedars-Sinai Medical Center<br>
+                            8700 Beverly Blvd<br>
+                            Los Angeles, CA 90048</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>costas.anastassiou@cshs.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (310) 423-0000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Anastassiou Lab</h3>
+                    <p>Advancing our understanding of brain function through multidisciplinary research.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#github">GitHub</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/anastassiou-team" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anastassiou Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Team Member Modal -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
