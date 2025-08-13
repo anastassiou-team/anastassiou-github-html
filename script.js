@@ -52,7 +52,7 @@ const teamMembers = {
     costas: {
         name: "Costas Anastassiou, PhD",
         title: "Principal Investigator",
-        photo: "costas-anastassiou-optimized.jpg",
+        photo: "29837-NS-SURG--Costas Anastassiou, PhD-Environmental 001-1280x1280.png",
         bio: "Large biological datasets nowadays offer impeccable, cellular resolution in the makeup of the brain. Yet, how this cellular makeup impacts neural activity in the brain, in health or disease, remains largely enigmatic. We use a multidisciplinary approach blending biology, engineering, computer science and statistics to address these questions.",
         expertise: ["Neuroscience", "Computational Biology", "Electrophysiology", "Machine Learning", "High-Performance Computing"],
         education: "PhD in Computational Neuroscience, University of California, Berkeley",
@@ -63,7 +63,7 @@ const teamMembers = {
     philip: {
         name: "Philip Wong",
         title: "Postdoctoral Fellow",
-        photo: "https://via.placeholder.com/300x300/3498db/FFFFFF?text=PW",
+        photo: "missing_member.png",
         bio: "Leading computational neuroscience projects at the level of human cellular and network biophysics and dynamics at Cedars-Sinai Medical Center. Philip specializes in advanced computational approaches to understanding neural systems.",
         expertise: ["Computational Neuroscience", "Biophysics", "Network Dynamics", "Human Neuroscience", "Computational Modeling"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
@@ -74,7 +74,7 @@ const teamMembers = {
     member2: {
         name: "Alex Rodriguez",
         title: "Graduate Student",
-        photo: "https://via.placeholder.com/300x300/FF6B6B/FFFFFF?text=AR",
+        photo: "missing_member.png",
         bio: "Alex is investigating the role of cellular diversity in neural circuit function using electrophysiological and transcriptomic approaches. His work combines experimental techniques with computational analysis to understand how different cell types contribute to brain function.",
         expertise: ["Electrophysiology", "Transcriptomics", "Data Analysis", "MATLAB", "Python"],
         education: "BS in Neuroscience, UCLA; Currently pursuing PhD in Neuroscience",
@@ -85,7 +85,7 @@ const teamMembers = {
     member3: {
         name: "Dr. Emily Watson",
         title: "Research Associate",
-        photo: "https://via.placeholder.com/300x300/4ECDC4/FFFFFF?text=EW",
+        photo: "missing_member.png",
         bio: "Dr. Watson is developing novel electrical stimulation protocols for therapeutic applications in neurological disorders. Her research focuses on optimizing stimulation parameters for treating conditions like Parkinson's disease and epilepsy.",
         expertise: ["Electrical Stimulation", "Therapeutics", "Neurological Disorders", "Clinical Research", "Device Development"],
         education: "PhD in Biomedical Engineering, Johns Hopkins University",
@@ -192,18 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
-    });
-});
-
-// Add loading animation for images
-document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('img');
-    images.forEach(img => {
-        img.addEventListener('load', () => {
-            img.style.opacity = '1';
-        });
-        img.style.opacity = '0';
-        img.style.transition = 'opacity 0.3s ease';
     });
 });
 
