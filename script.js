@@ -52,13 +52,18 @@ const teamMembers = {
     costas: {
         name: "Costas Anastassiou, PhD",
         title: "Principal Investigator",
-        photo: "29837-NS-SURG--Costas Anastassiou, PhD-Environmental 001-1280x1280.png",
-        bio: "Large biological datasets nowadays offer impeccable, cellular resolution in the makeup of the brain. Yet, how this cellular makeup impacts neural activity in the brain, in health or disease, remains largely enigmatic. We use a multidisciplinary approach blending biology, engineering, computer science and statistics to address these questions.",
+        photo: "costas-anastassiou.png",
+        bio: "Costas Anastassiou is Associate Professor of Neurosurgery, Biomedical Sciences and Neurology at the Cedars-Sinai Medical Center (Los Angeles, California). Between 2007 and 2013, Costas was a postdoctoral researcher at the California Institute of Technology with <a href='https://en.wikipedia.org/wiki/Christof_Koch' target='_blank' style='color: #3498db; text-decoration: none;'>Christof Koch</a> and collaborated with <a href='https://med.nyu.edu/faculty/gyorgy-buzsaki' target='_blank' style='color: #3498db; text-decoration: none;'>Gyorgy Buzsaki (NYU)</a> and <a href='https://en.wikipedia.org/wiki/Henry_Markram' target='_blank' style='color: #3498db; text-decoration: none;'>Henry Markram (EPFL)</a>. In 2013 he joined the Allen Institute for Brain Science in Seattle as scientist and Assistant Investigator. Costas' postdoctoral work was supported by three postdoctoral awards by the Engineering Physics and Sciences Research Council (2007) and the Swiss National Science foundation (2007, 2010). His work on the biophysics of brain computations received the 2016 Swiss National Science foundation Professor award. Costas' graduate thesis on nonlinear time-series analysis of electrochemical and biological data with <a href='https://profiles.imperial.ac.uk/d.ohare' target='_blank' style='color: #3498db; text-decoration: none;'>Danny O'Hare</a> and <a href='https://profiles.imperial.ac.uk/k.parker' target='_blank' style='color: #3498db; text-decoration: none;'>Kim Parker</a> at Imperial College London was supported by an EPSRC graduate fellowship. Costas holds a degree in chemical engineering (Dipl. Ing.) from the Swiss Federal Institute of Technology (ETH Zurich).",
         expertise: ["Neuroscience", "Computational Biology", "Electrophysiology", "Machine Learning", "High-Performance Computing"],
         education: "PhD in Computational Neuroscience, University of California, Berkeley",
         research: "Multimodal cellular data integration, Next-generation monitoring technologies, Electrical stimulation therapies",
         email: "costas.anastassiou@cshs.org",
-        publications: "50+ peer-reviewed publications in top-tier journals including Nature, Science, and Cell"
+        publications: "50+ peer-reviewed publications in top-tier journals including Nature, Science, and Cell",
+        affiliations: [
+            "Associate Professor of Neurosurgery, Biomedical Sciences, and Neurology",
+            "Department of Neurosurgery, Cedars-Sinai Medical Center",
+            "Affiliated Researcher, Archimedes AI, Athena Research Center"
+        ]
     },
     philip: {
         name: "Philip Wong, PhD",
@@ -140,28 +145,6 @@ function showMemberModal(memberData) {
             <div class="modal-section">
                 <h3>Biography</h3>
                 <p>${memberData.bio}</p>
-            </div>
-            <div class="modal-section">
-                <h3>Expertise</h3>
-                <div style="margin-bottom: 1rem;">
-                    ${memberData.expertise.map(exp => `<span style="display: inline-block; background: #e8f4fd; color: #3498db; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin: 0.2rem; font-weight: 500;">${exp}</span>`).join('')}
-                </div>
-            </div>
-            <div class="modal-section">
-                <h3>Education</h3>
-                <p>${memberData.education}</p>
-            </div>
-            <div class="modal-section">
-                <h3>Research Focus</h3>
-                <p>${memberData.research}</p>
-            </div>
-            <div class="modal-section">
-                <h3>Contact</h3>
-                <p><strong>Email:</strong> <a href="mailto:${memberData.email}" style="color: #3498db;">${memberData.email}</a></p>
-            </div>
-            <div class="modal-section">
-                <h3>Publications</h3>
-                <p>${memberData.publications}</p>
             </div>
         </div>
     `;
@@ -359,6 +342,13 @@ const publications = [
         year: "2011",
         doi: "10.1038/nn.4153",
         link: "https://www.nature.com/articles/nn.2727",
+        pressCoverage: [
+            "https://www.eurekalert.org:443/news-releases/922986",
+            "https://medicalxpress.com/news/2011-02-neurobiologists-weak-electrical-fields-brain.html",
+            "http://www.scienceagogo.com/news/20110102222950data_trunc_sys.shtml",
+            "https://www.sciencedaily.com/releases/2011/02/110202132617.htm",
+            "https://www.caltech.edu/about/news/neurobiologists-find-weak-electrical-fields-brain-help-neurons-fire-together-1671"
+        ],
         abstract: "Demonstration of ephaptic coupling between cortical neurons, revealing a novel mechanism of neural communication through extracellular electric fields."
     }
 ];
@@ -529,6 +519,15 @@ style.textContent = `
     .modal-section p {
         color: #666;
         line-height: 1.6;
+    }
+    
+    .modal-header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        object-position: center;
     }
 `;
 document.head.appendChild(style);

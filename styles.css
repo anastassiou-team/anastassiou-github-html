@@ -541,10 +541,79 @@ section {
 .member-title {
     color: #3498db;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.member-affiliations {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.member-affiliations a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.member-affiliations a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.member-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.7rem;
+    background: transparent;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #5a6c7d;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+.profile-link:hover {
+    background: #f8f9fa;
+    border-color: #3498db;
+    color: #3498db;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+}
+
+.profile-link i {
+    font-size: 0.8rem;
+    color: #8fa3b8;
+}
+
+.profile-link:hover i {
+    color: #3498db;
+}
+
+.link-keyword {
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.profile-link:hover .link-keyword {
+    color: #3498db;
 }
 
 .member-bio {
@@ -815,15 +884,16 @@ section {
     min-height: 300px;
 }
 
-.map-placeholder {
-    text-align: center;
-    color: #999;
+.contact-map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
-.map-placeholder i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #3498db;
+.contact-map iframe:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
@@ -912,8 +982,11 @@ section {
     border-radius: 15px;
     width: 90%;
     max-width: 600px;
+    max-height: 80vh;
     position: relative;
     animation: modalSlideIn 0.3s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @keyframes modalSlideIn {
@@ -943,6 +1016,13 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .modal-content {
+        margin: 2% auto;
+        max-height: 90vh;
+        padding: 1.5rem;
+        width: 95%;
+    }
+    
     .hamburger {
         display: flex;
     }
