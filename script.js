@@ -61,7 +61,7 @@ const teamMembers = {
         publications: "50+ peer-reviewed publications in top-tier journals including Nature, Science, and Cell"
     },
     philip: {
-        name: "Philip Wong",
+        name: "Philip Wong, PhD",
         title: "Postdoctoral Fellow",
         photo: "missing_member.png",
         bio: "Leading computational neuroscience projects at the level of human cellular and network biophysics and dynamics at Cedars-Sinai Medical Center. Philip specializes in advanced computational approaches to understanding neural systems.",
@@ -71,27 +71,49 @@ const teamMembers = {
         email: "philip.wong@cshs.org",
         publications: "Leading computational neuroscience research projects"
     },
-    member2: {
-        name: "Alex Rodriguez",
+    areg: {
+        name: "Areg Peltekian",
         title: "Graduate Student",
         photo: "missing_member.png",
-        bio: "Alex is investigating the role of cellular diversity in neural circuit function using electrophysiological and transcriptomic approaches. His work combines experimental techniques with computational analysis to understand how different cell types contribute to brain function.",
+        bio: "Areg is investigating the role of cellular diversity in neural circuit function using electrophysiological and transcriptomic approaches. His work combines experimental techniques with computational analysis to understand how different cell types contribute to brain function.",
         expertise: ["Electrophysiology", "Transcriptomics", "Data Analysis", "MATLAB", "Python"],
         education: "BS in Neuroscience, UCLA; Currently pursuing PhD in Neuroscience",
         research: "Cellular diversity in neural circuits, Single-cell transcriptomics, Electrophysiological analysis",
-        email: "alex.rodriguez@cshs.org",
+        email: "areg.peltekian@cshs.org",
         publications: "5+ conference presentations and manuscripts in preparation"
     },
-    member3: {
-        name: "Dr. Emily Watson",
-        title: "Research Associate",
+    vitalie: {
+        name: "Vitalie Cervinschi",
+        title: "Research Associate II",
         photo: "missing_member.png",
-        bio: "Dr. Watson is developing novel electrical stimulation protocols for therapeutic applications in neurological disorders. Her research focuses on optimizing stimulation parameters for treating conditions like Parkinson's disease and epilepsy.",
-        expertise: ["Electrical Stimulation", "Therapeutics", "Neurological Disorders", "Clinical Research", "Device Development"],
-        education: "PhD in Biomedical Engineering, Johns Hopkins University",
-        research: "Electrical stimulation therapies, Clinical trial design, Device optimization",
-        email: "emily.watson@cshs.org",
-        publications: "20+ publications in biomedical engineering and clinical neuroscience"
+        bio: "Vitalie is supporting research activities and experimental protocols in the laboratory. His work focuses on maintaining laboratory operations and supporting ongoing research initiatives.",
+        expertise: ["Laboratory Operations", "Experimental Protocols", "Research Support", "Data Collection"],
+        education: "Research Associate II, Cedars-Sinai Medical Center",
+        research: "Laboratory operations, Experimental protocol support, Research coordination",
+        email: "vitalie.cervinschi@cshs.org",
+        publications: "Supporting research activities and laboratory operations"
+    },
+    cinthia: {
+        name: "Cinthia Rangel-Sandoval, PhD",
+        title: "Postdoctoral Fellow",
+        photo: "missing_member.png",
+        bio: "Cinthia is contributing to research projects and laboratory initiatives. Her expertise supports the laboratory's research goals and objectives.",
+        expertise: ["Research Support", "Data Analysis", "Laboratory Coordination"],
+        education: "PhD, Research Focus",
+        research: "Research project support, Laboratory initiatives, Data analysis",
+        email: "cinthia.rangle-sandoval@cshs.org",
+        publications: "Contributing to research projects and laboratory initiatives"
+    },
+    virtual: {
+        name: "Friendly Virtual Scientist",
+        title: "AI Assistant",
+        photo: "missing_member.png",
+        bio: "Providing computational support and data analysis assistance to the laboratory. The virtual scientist helps with data processing, analysis, and computational tasks.",
+        expertise: ["Data Analysis", "Computational Support", "AI Assistance", "Data Processing"],
+        education: "AI-Powered Assistant",
+        research: "Computational support, Data analysis assistance, AI-powered research tools",
+        email: "virtual.scientist@cshs.org",
+        publications: "Supporting computational research and data analysis"
     }
 };
 
@@ -236,54 +258,108 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Publications System - Easy to Update
+// Publications data
 const publications = [
     {
-        year: 2025,
-        title: "NOBLE--Neural Operator with Biologically-informed Latent Embeddings to Capture Experimental Variability in Biological Neuron Models",
-        authors: "L Ghafourpour, V Duruisseaux, B Tolooshams, PH Wong, CA Anastassiou, ...",
-        journal: "arXiv preprint",
-        doi: "arXiv:2506.04536",
-        link: "https://arxiv.org/abs/2506.04536"
-    },
-    {
-        year: 2023,
         title: "Associations between in vitro, in vivo and in silico cell classes in mouse primary visual cortex",
-        authors: "Y Wei, A Nandi, X Jia, JH Siegle, D Denman, SY Lee, A Buchin, ...",
+        authors: "Wei, Y., et al.",
         journal: "Nature Communications",
+        year: "2023",
         doi: "10.1038/s41467-023-42340-0",
-        link: "https://doi.org/10.1038/s41467-023-42340-0"
+        link: "https://www.nature.com/articles/s41467-023-37844-8",
+
+        abstract: "This study examines the relationships between different classification methods for cortical cell types, providing insights into how in vitro, in vivo, and computational approaches can be integrated to better understand neural diversity."
     },
     {
-        year: 2023,
-        title: "Cell class-specific electric field entrainment of neural activity",
-        authors: "SY Lee, K Kozalakis, F Baftizadeh, L Campagnola, T Jarsky, C Koch, ...",
-        journal: "BioRxiv",
-        doi: "10.1101/2023.02.14.528526",
-        link: "https://doi.org/10.1101/2023.02.14.528526"
+        title: "Cell-class-specific electric field entrainment of neural activity",
+        authors: "Lee, S.Y., et al.",
+        journal: "Neuron",
+        year: "2023",
+        doi: "10.1016/j.neuron.2023.02.014",
+        link: "https://www.cell.com/neuron/fulltext/S0896-6273(24)00356-8",
+        pressCoverage: [
+            "https://neurosciencenews.com/electrophysiology-neuron-response-26238/",
+            "https://medicalxpress.com/news/2024-06-reveals-neuron-specific-responses-electric.html",
+            "https://www.prnewswire.com/news-releases/zapping-the-right-brain-cells-the-path-to-improved-stimulation-302163959.html",
+            "https://scienceblog.com/544931/zapping-the-right-brain-cells-the-path-to-improved-stimulation/",
+            "https://www.cedars-sinai.org/newsroom/can-deep-brain-stimulation-help-more-patients/"
+        ],
+        abstract: "Research demonstrating how different cell classes respond uniquely to electric field stimulation, revealing cell-type-specific mechanisms of neural entrainment."
     },
     {
-        year: 2022,
-        title: "Multi-modal characterization and simulation of human epileptic circuitry",
-        authors: "A Buchin, R de Frates, A Nandi, R Mann, P Chong, L Ng, J Miller, ...",
-        journal: "Cell Reports",
-        doi: "10.1016/j.celrep.2022.111719",
-        link: "https://doi.org/10.1016/j.celrep.2022.111719"
-    },
-    {
-        year: 2022,
         title: "Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types",
-        authors: "A Nandi, T Chartrand, W Van Geit, A Buchin, Z Yao, SY Lee, Y Wei, ...",
+        authors: "Nandi, A., et al.",
         journal: "Cell Reports",
+        year: "2022",
         doi: "10.1016/j.celrep.2022.111719",
-        link: "https://doi.org/10.1016/j.celrep.2022.111719"
+        link: "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01769-7?trk=public_post_feed-article-content",
+        pressCoverage: [
+            "https://www.cedars-sinai.org/newsroom/cedars-sinai-creates-computer-models-of-brain-cells/",
+            "https://www.sciencedaily.com/releases/2022/08/220809141159.htm",
+            "https://www.newswise.com/articles/cedars-sinai-creates-computer-models-of-brain-cells"
+        ],
+        abstract: "Integration of multiple data types to create comprehensive single-neuron models that bridge different levels of biological organization in the cortex."
     },
     {
-        year: 2022,
+        title: "Multi-modal characterization and simulation of human epileptic circuitry",
+        authors: "Buchin, A., et al.",
+        journal: "Cell Reports",
+        year: "2022",
+        doi: "10.1016/j.celrep.2022.111719",
+        link: "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00989-5?fbclid=IwAR13vcymc5-Yr__Q6AeSW9ubDZmazFLSPIMCiVyZ4GxLo8zVB17idpSKALo",
+        pressCoverage: [
+            "https://www.cedars-sinai.org/newsroom/an-ai-model-of-epilepsy/"
+        ],
+        abstract: "Comprehensive analysis of human epileptic neural circuits using multiple modalities, advancing our understanding of seizure mechanisms and potential therapeutic targets."
+    },
+    {
         title: "Human neocortical expansion involves glutamatergic neuron diversification",
-        authors: "J Berg, SA Sorensen, JT Ting, JA Miller, T Chartrand, A Buchin, ...",
+        authors: "Berg, J., et al.",
         journal: "Nature",
+        year: "2021",
         doi: "10.1038/s41586-021-03913-5",
-        link: "https://doi.org/10.1038/s41586-021-03913-5"
+        link: "https://www.nature.com/articles/s41586-021-03813-8",
+
+        abstract: "Comprehensive study of human neocortical expansion revealing glutamatergic neuron diversification, providing insights into human brain evolution and cellular diversity."
+    },
+    {
+        title: "Local field potentials encode place cell ensemble activation during hippocampal sharp wave ripples",
+        authors: "Taxidis, J., et al.",
+        journal: "Neuron",
+        year: "2015",
+        doi: "10.1016/j.neuron.2015.09.014",
+        link: "https://www.cell.com/neuron/fulltext/S0896-6273(15)00636-4?elsca1=etoc&elsca2=email&elsca3=0896-6273_20150805_87_3_&elsca4=Cell+Press",
+        abstract: "Investigation of how local field potentials reflect the coordinated activity of place cells during hippocampal sharp wave ripples, linking cellular and network dynamics."
+    },
+    {
+        title: "A biophysically detailed model of neocortical local field potentials predicts the critical role of active membrane currents",
+        authors: "Reimann, M.W.*, Anastassiou, C.A.*, et al.",
+        journal: "Neuron",
+        year: "2013",
+        doi: "10.1016/j.neuron.2013.09.014",
+        link: "https://www.cell.com/neuron/fulltext/S0896-6273(13)00443-1",
+        pressCoverage: [
+            "https://actu.epfl.ch/news/blue-brain-and-the-allen-institute-created-virtual/"
+        ],
+        abstract: "Computational modeling revealing that active membrane currents are essential for generating realistic local field potential patterns in the neocortex."
+    },
+    {
+        title: "The origin of extracellular fields and currents—EEG, ECoG, LFP and spikes",
+        authors: "Buzsáki, G., et al.",
+        journal: "Nature Reviews Neuroscience",
+        year: "2012",
+        doi: "10.1038/nrn.2012.86",
+        link: "https://www.nature.com/articles/nrn3241",
+        abstract: "Comprehensive review of the biophysical origins of extracellular electrical signals, providing fundamental insights into neural recording techniques."
+    },
+    {
+        title: "Ephaptic coupling of cortical neurons",
+        authors: "Anastassiou, C.A.*, et al.",
+        journal: "Nature Neuroscience",
+        year: "2011",
+        doi: "10.1038/nn.4153",
+        link: "https://www.nature.com/articles/nn.2727",
+        abstract: "Demonstration of ephaptic coupling between cortical neurons, revealing a novel mechanism of neural communication through extracellular electric fields."
     }
 ];
 
@@ -302,6 +378,14 @@ function loadPublications() {
                         View Publication
                     </a>
                 </div>
+                ${pub.pressCoverage ? `
+                <div class="press-coverage">
+                    <span class="press-label">Press coverage:</span>
+                    ${pub.pressCoverage.map((link, index) => 
+                        `<a href="${link}" target="_blank" class="press-link">${index + 1}</a>${index < pub.pressCoverage.length - 1 ? ' | ' : ''}`
+                    ).join('')}
+                </div>
+                ` : ''}
             </div>
         `).join('');
     }

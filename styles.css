@@ -121,8 +121,8 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 70vh;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
     display: flex;
     align-items: center;
     padding-top: 70px;
@@ -181,7 +181,7 @@ body {
 
 .play-button i {
     font-size: 2rem;
-    color: #667eea;
+    color: #dc2626;
     margin-left: 5px;
 }
 
@@ -257,14 +257,14 @@ body {
 }
 
 .btn-primary {
-    background: #3498db;
+    background: #dc2626;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #2980b9;
+    background: #991b1b;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
 }
 
 .btn-secondary {
@@ -275,7 +275,7 @@ body {
 
 .btn-secondary:hover {
     background: white;
-    color: #667eea;
+    color: #dc2626;
     transform: translateY(-2px);
 }
 
@@ -297,7 +297,7 @@ body {
     height: 20px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
-    animation: pulse 2s infinite;
+    animation: pulse 1.2s infinite;
 }
 
 .neuron:nth-child(1) {
@@ -326,7 +326,7 @@ body {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    animation: synapse 3s infinite;
+    animation: synapse 1.8s infinite;
 }
 
 @keyframes pulse {
@@ -361,7 +361,7 @@ section {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #3498db, #667eea);
+    background: linear-gradient(90deg, #dc2626, #991b1b);
     border-radius: 2px;
 }
 
@@ -568,7 +568,7 @@ section {
 .publications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    gap: 1.4rem;
     margin-bottom: 3rem;
 }
 
@@ -674,7 +674,7 @@ section {
 
 .publication-card {
     background: white;
-    padding: 2rem;
+    padding: 1.4rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #3498db;
@@ -736,6 +736,33 @@ section {
 
 .pub-link:hover {
     color: #2980b9;
+}
+
+/* Press Coverage Styles */
+.press-coverage {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.press-label {
+    color: #6b7280;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.press-link {
+    color: #dc2626;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.press-link:hover {
+    color: #991b1b;
+    text-decoration: underline;
 }
 
 
@@ -1034,5 +1061,105 @@ section {
     .member-photo img {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
+    }
+}
+
+/* Alumni Section Styles */
+.alumni-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #e5e7eb;
+}
+
+.alumni-title {
+    font-size: 2.2rem;
+    color: #1f2937;
+    margin-bottom: 28px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.alumni-category {
+    margin-bottom: 28px;
+}
+
+.alumni-category h4 {
+    font-size: 1.5rem;
+    color: #dc2626;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #dc2626;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.alumni-category h5 {
+    font-size: 1.2rem;
+    color: #374151;
+    margin: 25px 0 15px 0;
+    font-weight: 600;
+}
+
+.alumni-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alumni-list li {
+    background: #f9fafb;
+    border-left: 4px solid #dc2626;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.alumni-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+}
+
+.alumni-list li strong {
+    color: #1f2937;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.alumni-list li em {
+    color: #6b7280;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.alumni-list li br {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments for alumni section */
+@media (max-width: 768px) {
+    .alumni-section {
+        margin-top: 40px;
+        padding-top: 30px;
+    }
+    
+    .alumni-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .alumni-category h4 {
+        font-size: 1.3rem;
+    }
+    
+    .alumni-list li {
+        padding: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .alumni-list li strong {
+        font-size: 1rem;
     }
 }
