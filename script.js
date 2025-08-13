@@ -354,7 +354,7 @@ const publications = [
     },
     {
         title: "Ephaptic coupling of cortical neurons",
-        authors: "Anastassiou, C.A.*, et al.",
+        authors: "Anastassiou, C.A.*, Perin, R.*, et al.",
         journal: "Nature Neuroscience",
         year: "2011",
         doi: "10.1038/nn.4153",
