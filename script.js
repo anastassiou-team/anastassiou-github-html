@@ -239,7 +239,7 @@ window.addEventListener('scroll', () => {
 // Publications and GitHub Integration
 document.addEventListener('DOMContentLoaded', () => {
     loadPublications();
-    loadGitHubRepositories();
+    // loadGitHubRepositories(); // Disabled - using custom repository cards
 });
 
 // Publications System - Easy to Update

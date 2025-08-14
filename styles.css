@@ -100,9 +100,14 @@ body {
     background: #3498db;
 }
 
-
-
-
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3498db;
     transition: width 0.3s ease;
 }
 
@@ -434,6 +439,29 @@ section {
 }
 
 
+
+/* Research Highlights Banner */
+.research-banner {
+    background: white;
+    padding: 1rem 0;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.banner-figures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
 
 /* Team Section */
 .team {
@@ -792,11 +820,52 @@ section {
     font-size: 1rem;
 }
 
+.repo-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.repo-topic {
+    background: #e8f4fd;
+    color: #3498db;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 .repo-description {
     color: #666;
     line-height: 1.6;
     margin-bottom: 1rem;
     font-size: 0.95rem;
+}
+
+.repo-citation {
+    margin-bottom: 1rem;
+}
+
+.citation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.citation-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.citation-link i {
+    color: #3498db;
+    font-size: 0.8rem;
 }
 
 .repo-meta {
@@ -818,19 +887,7 @@ section {
 
 
 
-.repo-topics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
 
-.repo-topic {
-    background: #f0f0f0;
-    color: #666;
-    padding: 0.2rem 0.6rem;
-    border-radius: 15px;
-    font-size: 0.75rem;
-}
 
 .github-cta {
     text-align: center;
@@ -1055,6 +1112,53 @@ section {
 }
 
 .social-links a:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+}
+
+.x-link {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #34495e;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.x-link::before,
+.x-link::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: white;
+    border-radius: 1px;
+}
+
+.x-link::before {
+    transform: rotate(45deg);
+    left: 50%;
+    top: 50%;
+    margin-left: -1px;
+    margin-top: -10px;
+}
+
+.x-link::after {
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin-left: -1px;
+    margin-top: -10px;
+}
+
+.x-link:hover {
     background: #3498db;
     transform: translateY(-2px);
 }

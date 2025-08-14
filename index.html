@@ -71,21 +71,12 @@
             <h2 class="section-title">About the Lab</h2>
             <div class="about-content">
                 <div class="about-text">
+                    <h3>How Do Cell Types Shape Human Cognition?</h3>
                     <p>
-                        The Anastassiou Laboratory studies how the molecular and cellular composition of neurons 
-                        translates to their phenotype and how these properties combine in brain circuits to produce 
-                        function or, in the case of disease, dysfunction.
+                        Despite unprecedented insights into the brain's composition we still do not understand how cellular activity organizes at the circuit level and bridges to cognitive computations. This challenge is particularly acute in humans, where we lack the tools to establish causal links between cell types and brain computations. How do human neurons of all flavors combine to produce cognition? What principles underly such computations? Can these computations be reverse-engineered and simulated from first principles?
                     </p>
                     <p>
-                        We have a broad background in multimodal cellular data (electrophysiology, anatomy, transcriptomics) 
-                        and the development of state-of-the-art computational workflows (statistical learning, optimization 
-                        and simulation) to understand cellular activity in behavior and disease.
-                    </p>
-                    <p>
-                        Uniquely, this work includes human brain tissue, both as a byproduct from surgery as well as 
-                        from model systems such as human pluripotent stem cells. We successfully pursue collaborations 
-                        with clinicians to translate cellular and circuit findings to gain a better understanding of 
-                        diseases such as epilepsy and Parkinson's disease, as well as development of improved therapies.
+                        We develop tools to unravel causal links in human microcircuit dynamics and cognition in health and disease. To do so, we adopt a multidisciplinary approach combining biophysics, statistical learning, optimization, computational simulation, and biophysics-informed AI.
                     </p>
                 </div>
                 <div class="affiliations">
@@ -121,9 +112,14 @@
         </div>
     </section>
 
-
-
-
+    <!-- Research Highlights Banner -->
+    <section class="research-banner">
+        <div class="container">
+            <div class="banner-figures">
+                <img src="banner_detail.png" alt="Research Highlights from Anastassiou Lab Publications" class="banner-image">
+            </div>
+        </div>
+    </section>
 
     <!-- Team Section -->
     <section id="team" class="team">
@@ -351,7 +347,127 @@
             <h2 class="section-title">GitHub</h2>
             <div class="github-content">
                 <div class="repos-grid" id="reposGrid">
-                    <!-- Repository cards will be populated by JavaScript -->
+                    <!-- Custom Repository Card -->
+                    <div class="repo-card" onclick="window.open('https://github.com/anastassiou-team/Nandi_EtAl_All-Active-workflow', '_blank')">
+                        <div class="repo-name">
+                            <i class="fab fa-github"></i>
+                            Evolutionary Optimization of Single Cell Models
+                        </div>
+                        <div class="repo-description">
+                            Workflow for generating all-active computational models of neurons, integrating electrophysiology, morphology, and transcriptomics data for comprehensive single-cell modeling.
+                        </div>
+                        <div class="repo-citation">
+                            <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01769-7?trk=public_post_feed-article-content" target="_blank" class="citation-link">
+                                <i class="fas fa-file-alt"></i>
+                                Nandi, A., et al. (2022) Cell Reports
+                            </a>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="repo-language">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Custom Repository Card 2 -->
+                    <div class="repo-card" onclick="window.open('https://github.com/anastassiou-team/Nandi_EtAl_All-Active_Paper', '_blank')">
+                        <div class="repo-name">
+                            <i class="fab fa-github"></i>
+                            Single-Cell Model Handling
+                        </div>
+                        <div class="repo-description">
+                            Tools and workflows for handling and analyzing single-cell models, supporting the computational pipeline for neuronal modeling and analysis.
+                        </div>
+                        <div class="repo-citation">
+                            <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01769-7?trk=public_post_feed-article-content" target="_blank" class="citation-link">
+                                <i class="fas fa-file-alt"></i>
+                                Nandi, A., et al. (2022) Cell Reports
+                            </a>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="repo-language">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Custom Repository Card 3 -->
+                    <div class="repo-card" onclick="window.open('https://github.com/anastassiou-team/human-epilepsy-project', '_blank')">
+                        <div class="repo-name">
+                            <i class="fab fa-github"></i>
+                            Cellular and Microcircuit Simulation of Human Epilepsy
+                        </div>
+                        <div class="repo-description">
+                            Code base for multi-modal characterization and simulation of human epileptic circuitry, including Python, Matlab, and R implementations for comprehensive epilepsy research.
+                        </div>
+                        <div class="repo-citation">
+                            <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00989-5?fbclid=IwAR13vcymc5-Yr__Q6AeSW9ubDZmazFLSPIMCiVyZ4GxLo8zVB17idpSKALx" target="_blank" class="citation-link">
+                                <i class="fas fa-file-alt"></i>
+                                Buchin, A., et al. (2022) Cell Reports
+                            </a>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="repo-language">Jupyter Notebook</span>
+                        </div>
+                    </div>
+
+                    <!-- Custom Repository Card 4 -->
+                    <div class="repo-card" onclick="window.open('https://github.com/anastassiou-team/human_cortical_single_neuron_models', '_blank')">
+                        <div class="repo-name">
+                            <i class="fab fa-github"></i>
+                            En Masse Cellular Models from Human Patch-seq Data
+                        </div>
+                        <div class="repo-description">
+                            Bio-realistic human cortical single cell simulation models for BMTK+neuron, including all-active ion channels and ground truth from patch-seq experiments.
+                        </div>
+                        <div class="repo-meta">
+                            <span class="repo-language">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Custom Repository Card 5 -->
+                    <div class="repo-card" onclick="window.open('https://github.com/anastassiou-team/human_single_cell_complexity', '_blank')">
+                        <div class="repo-name">
+                            <i class="fab fa-github"></i>
+                            Complexity of Human Single-Neurons
+                        </div>
+                        <div class="repo-description">
+                            Analysis of how single neuron models react to random dendritic input, including complexity testing workflows and morphological complexity analysis of human cortical cells.
+                        </div>
+                        <div class="repo-meta">
+                            <span class="repo-language">NMODL</span>
+                        </div>
+                    </div>
+
+                    <!-- Custom Repository Card 6 -->
+                    <div class="repo-card" onclick="window.open('https://github.com/anastassiou-team/ateam-tools', '_blank')">
+                        <div class="repo-name">
+                            <i class="fab fa-github"></i>
+                            ateam-tools
+                        </div>
+                        <div class="repo-description">
+                            Shared modeling and analysis tools for internal use by the Anastassiou research team, including BMTK integration, morphological feature extraction, and simulation utilities.
+                        </div>
+                        <div class="repo-meta">
+                            <span class="repo-language">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Custom Repository Card 7 -->
+                    <div class="repo-card" onclick="window.open('https://github.com/anastassiou-team/Wei_EtAl_human-spike_waveforms', '_blank')">
+                        <div class="repo-name">
+                            <i class="fab fa-github"></i>
+                            Impact of Biophysics and Motion Effects in Human Extracellular Unit Recordings
+                        </div>
+                        <div class="repo-description">
+                            Single-cell all-active models of human neocortical neurons with detailed morphology simulating extracellular action potential waveforms and biophysics.
+                        </div>
+                        <div class="repo-citation">
+                            <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30188-1" target="_blank" class="citation-link">
+                                <i class="fas fa-file-alt"></i>
+                                Mosher et al. (2020) Cell Reports
+                            </a>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="repo-language">Jupyter Notebook</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="github-cta">
                     <a href="https://github.com/anastassiou-team" target="_blank" class="btn btn-primary">
@@ -373,14 +489,14 @@
                     <div class="job-card">
                         <h3>Postdoctoral Scientist - Anastassiou Lab</h3>
                         <p class="job-type">Department of Neurosurgery</p>
-                        <p class="job-description">Join our research team in the Department of Neurosurgery at Cedars-Sinai Medical Center. This position focuses on computational neuroscience and neural circuit research.</p>
+                        <p class="job-description">The Postdoctoral Scientist will focus on neuro-inspired AI applications and the development of new model generation pipelines.</p>
                         <div class="job-requirements">
                             <h4>Experience and Skills:</h4>
                             <ul>
-                                <li>Experience in Computational Neuroscience preferred (or Computational Physics, Applied Mathematics, Biophysics, and related fields)</li>
-                                <li>Experience with parallel computing is a plus</li>
+                                <li>Experience in computational neuroscience preferred (or computational physics, applied mathematics, biophysics, and related fields)</li>
                                 <li>Familiarity with high-level programming languages such as Python or Matlab</li>
-                                <li>Experience with in vitro and in vivo electrophysiological monitoring techniques and analysis</li>
+                                <li>Experience analyzing electrophysiology data (in vitro and/or in vivo)</li>
+                                <li>Experience with parallel computing is a plus</li>
                                 <li>Ability to meet aggressive timelines and deliverables in a collaborative environment</li>
                             </ul>
                         </div>
@@ -390,14 +506,13 @@
                     <div class="job-card">
                         <h3>Project Scientist - Anastassiou Lab</h3>
                         <p class="job-type">Department of Neurosurgery</p>
-                        <p class="job-description">Project Scientist position in the Department of Neurosurgery, focusing on research studies and clinical trials in neuroscience.</p>
+                        <p class="job-description">The Project Scientist will focus on data-driven, human-centered models of neurons and microcircuits.</p>
                         <div class="job-requirements">
                             <h4>Experience and Skills:</h4>
                             <ul>
-                                <li>Doctorate degree required</li>
-                                <li>Completion of postdoctoral appointment in area of specialization, as applicable</li>
-                                <li>Knowledge of PI's area of research specialization</li>
-                                <li>Demonstrated technical proficiency</li>
+                                <li>Doctorate degree required in a computational discipline (e.g. computational neuroscience, computational physics, applied mathematics, biophysics, etc.)</li>
+                                <li>Completion of postdoctoral appointment in computational neuroscience and biophysics</li>
+                                <li>Experience with parallel computing is a plus</li>
                                 <li>Experience in grant proposal preparation and submissions</li>
                             </ul>
                         </div>
@@ -407,14 +522,13 @@
                     <div class="job-card">
                         <h3>Research Associate III - Anastassiou Lab</h3>
                         <p class="job-type">Department of Neurosurgery</p>
-                        <p class="job-description">Research Associate III position supporting research activities in the Department of Neurosurgery at Cedars-Sinai Medical Center.</p>
+                        <p class="job-description">The RA will focus on developing pipelines to analyze and model human electrophysiology data. </p>
                         <div class="job-requirements">
                             <h4>Position Details:</h4>
                             <ul>
-                                <li>Full-time research position in Academic/Research</li>
-                                <li>Department: Research - Neurosurgical</li>
-                                <li>Location: Los Angeles, CA</li>
-                                <li>Job Specialty: Research Studies/Clin Trial</li>
+                                <li>Degree in a quantitative discipline (e.g. engineering, physics, applied mathematics, computer science)</li>
+                                <li>Strong coding and data wrangling skills</li>
+                                <li>Eagerness and ability to learn new skills and quantitative methods.</li>
                             </ul>
                         </div>
                         <a href="https://careers.cshs.org/search-jobs/anastassiou/252/1" target="_blank" class="btn btn-primary">View on Cedars-Sinai Careers</a>
@@ -423,14 +537,13 @@
                     <div class="job-card">
                         <h3>Postdoctoral Scientist - Anastassiou & Rutishauser Labs</h3>
                         <p class="job-type">Department of Neurosurgery</p>
-                        <p class="job-description">Postdoctoral position working across both Anastassiou and Rutishauser labs, with a focus on computational experience and collaborative research.</p>
+                        <p class="job-description">Postdoctoral position in the Anastassiou and Rutishauser labs focusing on modeling intracellular and extracellular dynamics and biophysics in human microcircuits.</p>
                         <div class="job-requirements">
                             <h4>Experience and Skills:</h4>
                             <ul>
-                                <li>Strong background in scientific computing</li>
-                                <li>Experience in Computational Neuroscience preferred (or Computational Physics, Applied Mathematics, Biophysics, and related disciplines)</li>
-                                <li>Experience with parallel computing is a plus</li>
+                                <li>Experience in computational neuroscience preferred (or computational physics, applied mathematics, biophysics, and related disciplines)</li>
                                 <li>Familiarity with high-level programming languages such as Python or Matlab</li>
+                                <li>Experience with parallel computing is a plus</li>
                                 <li>Familiarity with in vitro and in vivo electrophysiological monitoring techniques and analysis</li>
                             </ul>
                         </div>
@@ -439,8 +552,8 @@
                 </div>
                 <div class="jobs-cta">
                     <p>Don't see a position that fits? We're always interested in hearing from talented researchers!<br>
-                    But know this: for all positions, strong coding and data wrangling skills are essential. A PhD and track record of first author publications are required for postdoc positions.<br><br>
-                    Please reach out to Costas Anastassiou (email below) if interested in any of the above.</p>
+                    <strong>For all positions, strong coding and data wrangling skills are essential. A PhD and track record of first author publications are required for postdoc positions.</strong><br><br>
+                    Please reach out to Costas Anastassiou if interested in any of the above.</p>
                     <a href="mailto:costas.anastassiou@cshs.org?subject=General Job Inquiry" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
@@ -515,7 +628,7 @@
                 <div class="footer-section">
                     <h3>Connect</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://x.com/anastassiou_lab" target="_blank" class="x-link"></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/anastassiou-team" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
