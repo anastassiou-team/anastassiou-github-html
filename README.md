@@ -1,6 +1,6 @@
 # Anastassiou Lab Website
 
-A modern, responsive website for the Anastassiou Laboratory at Cedars-Sinai Medical Center. This website showcases the lab's research, team members, publications, and provides an interactive experience for visitors.
+This is where we setup the website of the Anastassiou Lab at Cedars-Sinai Medical Center.
 
 ## 🌟 Features
 
@@ -177,38 +177,9 @@ The website is fully responsive and includes:
 - **Safari** (latest) ✅
 - **Edge** (latest) ✅
 
-### Cross-Browser Compatibility Features:
-- **Vendor prefixes** for CSS transitions and transforms
-- **Flexbox and Grid** with fallbacks
-- **Safari-specific optimizations** for image rendering
-- **Firefox compatibility** through local web server
-- **Responsive design** that adapts to all screen sizes
-- Mobile browsers
 
-### **Performance Features**
-- **Lazy loading** animations
-- **Smooth scrolling** navigation
-- **Optimized CSS** with minimal repaints
-- **Efficient JavaScript** event handling
 
-## 📝 Content Guidelines
 
-### **Writing Style**
-- Use clear, professional language
-- Keep descriptions concise but informative
-- Highlight key achievements and research areas
-- Use consistent formatting throughout
-
-### **Images**
-- Use high-quality photos for team members
-- Optimize images for web (recommended: 300x300px for profiles)
-- Include alt text for accessibility
-- Consider using professional headshots
-
-### **Links**
-- Update publication links to actual papers
-- Add real social media links in footer
-- Include links to lab resources and datasets
 
 ## 🚀 Deployment
 
@@ -238,75 +209,4 @@ To contribute to the website:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📞 Support
 
-For questions or issues:
-- Check the code comments for guidance
-- Review browser console for JavaScript errors
-- Ensure all files are properly linked
-- Test on different devices and browsers
-
-## 🔄 Updates and Maintenance
-
-### **Regular Updates**
-- **Team changes** - Update member profiles
-- **New publications** - Add to publications section
-- **Research updates** - Modify research area descriptions
-- **News items** - Keep current with lab activities
-
-### **Content Review**
-- Review content quarterly
-- Update outdated information
-- Check all links are working
-- Ensure mobile experience remains optimal
-
-## 📊 Analytics and SEO
-
-Consider adding:
-- Google Analytics for visitor tracking
-- Meta tags for better SEO
-- Open Graph tags for social sharing
-- Structured data for research organizations
-
----
-
-**Built with ❤️ for the Anastassiou Lab**
-
-## 🧹 **Recent Cleanup & Organization**
-
-### **Files Removed (Space Saved: ~100MB+)**
-- Old logo versions and duplicates
-- Unused PowerPoint and PDF files
-- Test images and duplicate photos
-- Large TIFF files
-
-### **Current Clean Structure**
-- **Core Files:** HTML, CSS, JavaScript
-- **Current Assets:** SVG logo, banner, essential images
-- **Source Files:** PowerPoint logo source
-- **Documentation:** README and update guides
-
-### **Performance Improvements**
-- Reduced total file size significantly
-- Cleaner file organization
-- Faster loading times
-- Better maintainability
-
-## 🎯 **Current Features Status**
-
-### **✅ Fully Functional**
-- Dynamic logo animations (top and footer)
-- Working favicon with lab logo
-- Functional citation links to Cell Reports papers
-- Working social media links (LinkedIn, X, GitHub)
-- Google Maps integration
-- Job opportunities with direct links
-- Responsive design for all devices
-- Interactive team member modals
-
-### **🚀 Ready for Deployment**
-- GitHub Pages compatible
-- Custom domain ready (anastassiou-lab.org)
-- Mobile-optimized
-- Professional appearance
-- All links and functionality tested
