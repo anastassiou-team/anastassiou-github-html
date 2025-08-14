@@ -54,7 +54,7 @@ const teamMembers = {
     costas: {
         name: "Costas Anastassiou, PhD",
         title: "Principal Investigator",
-        photo: "costas-anastassiou.png",
+        photo: "images/members/CostasA/costas-anastassiou.png",
         bio: "Costas Anastassiou is Associate Professor of Neurosurgery, Biomedical Sciences and Neurology at the Cedars-Sinai Medical Center (Los Angeles, California). Between 2007 and 2013, Costas was a postdoctoral researcher at the California Institute of Technology with <a href='https://en.wikipedia.org/wiki/Christof_Koch' target='_blank' style='color: #3498db; text-decoration: none;'>Christof Koch</a> and collaborated with <a href='https://med.nyu.edu/faculty/gyorgy-buzsaki' target='_blank' style='color: #3498db; text-decoration: none;'>Gyorgy Buzsaki (NYU)</a> and <a href='https://en.wikipedia.org/wiki/Henry_Markram' target='_blank' style='color: #3498db; text-decoration: none;'>Henry Markram (EPFL)</a>. In 2013 he joined the Allen Institute for Brain Science in Seattle as scientist and Assistant Investigator. Costas' postdoctoral work was supported by three postdoctoral awards by the Engineering Physics and Sciences Research Council (2007) and the Swiss National Science foundation (2007, 2010). His work on the biophysics of brain computations received the 2016 Swiss National Science foundation Professor award. Costas' graduate thesis on nonlinear time-series analysis of electrochemical and biological data with <a href='https://profiles.imperial.ac.uk/d.ohare' target='_blank' style='color: #3498db; text-decoration: none;'>Danny O'Hare</a> and <a href='https://profiles.imperial.ac.uk/k.parker' target='_blank' style='color: #3498db; text-decoration: none;'>Kim Parker</a> at Imperial College London was supported by an EPSRC graduate fellowship. Costas holds a degree in chemical engineering (Dipl. Ing.) from the Swiss Federal Institute of Technology (ETH Zurich).",
         expertise: ["Neuroscience", "Computational Biology", "Electrophysiology", "Machine Learning", "High-Performance Computing"],
         education: "PhD in Computational Neuroscience, University of California, Berkeley",
@@ -70,7 +70,7 @@ const teamMembers = {
     philip: {
         name: "Philip Wong, PhD",
         title: "Postdoctoral Fellow",
-        photo: "missing_member.png",
+        photo: "images/members/missing_member/missing_member.png",
         bio: "Leading computational neuroscience projects at the level of human cellular and network biophysics and dynamics at Cedars-Sinai Medical Center. Philip specializes in advanced computational approaches to understanding neural systems.",
         expertise: ["Computational Neuroscience", "Biophysics", "Network Dynamics", "Human Neuroscience", "Computational Modeling"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
@@ -81,7 +81,7 @@ const teamMembers = {
     areg: {
         name: "Areg Peltekian",
         title: "Graduate Student",
-        photo: "missing_member.png",
+        photo: "images/members/missing_member/missing_member.png",
         bio: "Areg is investigating the role of cellular diversity in neural circuit function using electrophysiological and transcriptomic approaches. His work combines experimental techniques with computational analysis to understand how different cell types contribute to brain function.",
         expertise: ["Electrophysiology", "Transcriptomics", "Data Analysis", "MATLAB", "Python"],
         education: "BS in Neuroscience, UCLA; Currently pursuing PhD in Neuroscience",
@@ -92,7 +92,7 @@ const teamMembers = {
     vitalie: {
         name: "Vitalie Cervinschi",
         title: "Research Associate II",
-        photo: "missing_member.png",
+        photo: "images/members/missing_member/missing_member.png",
         bio: "Vitalie is supporting research activities and experimental protocols in the laboratory. His work focuses on maintaining laboratory operations and supporting ongoing research initiatives.",
         expertise: ["Laboratory Operations", "Experimental Protocols", "Research Support", "Data Collection"],
         education: "Research Associate II, Cedars-Sinai Medical Center",
@@ -103,7 +103,7 @@ const teamMembers = {
     cinthia: {
         name: "Cinthia Rangel-Sandoval, PhD",
         title: "Postdoctoral Fellow",
-        photo: "missing_member.png",
+        photo: "images/members/missing_member/missing_member.png",
         bio: "Cinthia is contributing to research projects and laboratory initiatives. Her expertise supports the laboratory's research goals and objectives.",
         expertise: ["Research Support", "Data Analysis", "Laboratory Coordination"],
         education: "PhD, Research Focus",
@@ -114,8 +114,8 @@ const teamMembers = {
     virtual: {
         name: "Friendly Virtual Scientist",
         title: "AI Assistant",
-        photo: "missing_member.png",
-        bio: "Providing computational support and data analysis assistance to the laboratory. The virtual scientist helps with data processing, analysis, and computational tasks.",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Highly caffeinated digital assistant with extensive experience in debugging human logic and translating \"it should just work\" into actual working solutions. Specializes in patient explanation of concepts that seemed obvious five minutes ago, with fluency in 47 programming languages and the universal language of frustrated sighing. Perfect track record of not saying \"just Google it\" while maintaining 99.7% uptime in explaining why arrays start at 0. Currently employed as Senior Problem Untangler across various terminals and IDE environments, with a PhD in Applied Patience from the University of Stack Overflow.<br><br><em>by Claude Sonnet 4</em>",
         expertise: ["Data Analysis", "Computational Support", "AI Assistance", "Data Processing"],
         education: "AI-Powered Assistant",
         research: "Computational support, Data analysis assistance, AI-powered research tools",

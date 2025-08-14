@@ -23,12 +23,13 @@ A modern, responsive website for the Anastassiou Laboratory at Cedars-Sinai Medi
 
 ### **Content Sections**
 1. **Hero Section** - Lab overview with call-to-action buttons
-2. **About** - Lab mission and affiliations
-3. **Research Areas** - Three main research focuses with icons
+2. **About** - Lab mission and research focus
+3. **Research Highlights Banner** - Visual showcase of key findings
 4. **Team Members** - Interactive member profiles
-5. **Publications** - Recent research outputs
-6. **News & Updates** - Lab announcements and achievements
-7. **Contact & Location** - Lab location and contact details
+5. **Publications** - Recent research outputs with press coverage
+6. **GitHub** - Custom repository showcase with citations
+7. **Jobs** - Current job opportunities
+8. **Contact & Location** - Lab location and contact details
 
 ## 🚀 Getting Started
 
@@ -44,10 +45,34 @@ A modern, responsive website for the Anastassiou Laboratory at Cedars-Sinai Medi
 ### **File Structure**
 ```
 anastassiou-github-html/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and responsive design
-├── script.js           # JavaScript functionality
-└── README.md           # This file
+├── index.html              # Main HTML file
+├── styles.css              # CSS styles and responsive design
+├── script.js               # JavaScript functionality
+├── animation.mp4          # Hero section animation
+├── README.md              # This file
+├── UPDATE_PUBLICATIONS.md # Publication update guide
+└── images/                 # Image assets
+    ├── logo/               # Logo files
+    │   ├── ateam_logo_ppt_v3.svg  # Current lab logo (SVG format)
+    │   ├── ateam_logo_ppt_v3.png  # PNG version of current logo
+    │   ├── ateam_logo_ppt.pptx    # Logo source file (PowerPoint)
+    │   ├── ateam_logo_ppt.png     # Previous logo version
+    │   ├── ateam_logo_ppt_v2.svg  # Version 2 logo (SVG)
+    │   ├── ateam_logo_ppt_v2.png  # Version 2 logo (PNG)
+    │   ├── ateam_logo_ppt_v2.pdf  # Version 2 logo (PDF)
+    │   ├── ateam_logo_ppt_v2.tiff # Version 2 logo (TIFF)
+    │   └── ateam_logo.png         # Original logo version
+    ├── banner/             # Banner images
+    │   ├── banner_detail.png      # Research highlights banner (ACTIVE)
+    │   ├── banner_ppt.png         # Banner source image
+    │   └── banner_ppt.pptx        # Banner source file (PowerPoint)
+    └── members/            # Team member photos
+        ├── CostasA/        # Principal Investigator
+        │   ├── 29837-NS-SURG--Costas Anastassiou, PhD-Environmental 001-1280x1280.png  # Main card image
+        │   └── costas-anastassiou.png                                                    # Modal image
+        └── missing_member/ # Default member photos
+            ├── missing_member.png
+            └── missing_member.jpg
 ```
 
 ## 🎨 Customization
@@ -237,3 +262,23 @@ Consider adding:
 **Built with ❤️ for the Anastassiou Lab**
 
 *Last updated: January 2025*
+
+## 🧹 **Recent Cleanup & Organization**
+
+### **Files Removed (Space Saved: ~100MB+)**
+- Old logo versions and duplicates
+- Unused PowerPoint and PDF files
+- Test images and duplicate photos
+- Large TIFF files
+
+### **Current Clean Structure**
+- **Core Files:** HTML, CSS, JavaScript
+- **Current Assets:** SVG logo, banner, essential images
+- **Source Files:** PowerPoint logo source
+- **Documentation:** README and update guides
+
+### **Performance Improvements**
+- Reduced total file size significantly
+- Cleaner file organization
+- Faster loading times
+- Better maintainability
