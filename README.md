@@ -4,32 +4,36 @@ A modern, responsive website for the Anastassiou Laboratory at Cedars-Sinai Medi
 
 ## 🌟 Features
 
-### **Interactive Lab Members Section**
+### **Dynamic Logo Animations**
+- **Top-left logo** - Cycles through black, red, and blue colors continuously
+- **Footer logo** - Multi-color cycling animation for visual appeal
+- **Professional appearance** - Always engaging without being distracting
+
+### **Interactive Team Members Section**
 - **Clickable team member cards** that open detailed modal windows
 - **Comprehensive member profiles** including:
   - Biography and research focus
-  - Expertise and skills
-  - Education background
-  - Contact information
-  - Publication counts
+  - Official affiliations and profile links
+  - Hyperlinked collaborator references
+  - Professional contact information
 - **Responsive design** that works on all devices
 
-### **Modern Design Elements**
-- **Gradient hero section** with animated brain circuit visualization
-- **Smooth scrolling navigation** with active state indicators
-- **Hover effects** and animations throughout
-- **Mobile-responsive** with hamburger menu
-- **Professional color scheme** using modern CSS
-
-### **Content Sections**
-1. **Hero Section** - Lab overview with call-to-action buttons
-2. **About** - Lab mission and research focus
+### **Professional Content Sections**
+1. **Hero Section** - Lab overview with white-bordered call-to-action buttons
+2. **About** - Lab mission and research focus with question-driven approach
 3. **Research Highlights Banner** - Visual showcase of key findings
-4. **Team Members** - Interactive member profiles
-5. **Publications** - Recent research outputs with press coverage
-6. **GitHub** - Custom repository showcase with citations
-7. **Jobs** - Current job opportunities
-8. **Contact & Location** - Lab location and contact details
+4. **Team Members** - Interactive member profiles with modal windows
+5. **Publications** - Recent research outputs with press coverage links
+6. **GitHub** - Custom repository showcase with working citation links
+7. **Jobs** - Current job opportunities with direct Cedars-Sinai links
+8. **Contact & Location** - Lab location with embedded Google Maps
+
+### **Advanced Functionality**
+- **Working favicon** - Custom lab logo optimized for browser tabs
+- **Functional social links** - LinkedIn, X (Twitter), and GitHub all working
+- **Citation system** - All GitHub citations link to actual Cell Reports papers
+- **Responsive navigation** - Mobile-friendly with hamburger menu
+- **Professional styling** - Modern CSS with smooth animations
 
 ## 🚀 Getting Started
 
@@ -41,6 +45,13 @@ A modern, responsive website for the Anastassiou Laboratory at Cedars-Sinai Medi
 1. Clone or download this repository
 2. Open `index.html` in your web browser
 3. The website should load with all functionality working
+
+### **Local Development Server**
+For testing on mobile devices or other browsers:
+```bash
+python3 -m http.server 8000
+```
+Then access via `http://YOUR_IP:8000`
 
 ### **File Structure**
 ```
@@ -55,12 +66,12 @@ anastassiou-github-html/
     ├── logo/               # Logo files
     │   ├── ateam_logo_ppt_v3.svg  # Current lab logo (SVG format)
     │   ├── ateam_logo_ppt_v3.png  # PNG version of current logo
+    │   ├── ateam_logo_ppt_v3_greyscale.png  # Greyscale version
+    │   ├── ateam_logo_ppt_v3_favicon.svg    # Favicon-optimized logo
     │   ├── ateam_logo_ppt.pptx    # Logo source file (PowerPoint)
-    │   ├── ateam_logo_ppt.png     # Previous logo version
-    │   ├── ateam_logo_ppt_v2.svg  # Version 2 logo (SVG)
+    │   ├── ateam_logo_ppt_v2.tiff # Version 2 logo (TIFF)
     │   ├── ateam_logo_ppt_v2.png  # Version 2 logo (PNG)
     │   ├── ateam_logo_ppt_v2.pdf  # Version 2 logo (PDF)
-    │   ├── ateam_logo_ppt_v2.tiff # Version 2 logo (TIFF)
     │   └── ateam_logo.png         # Original logo version
     ├── banner/             # Banner images
     │   ├── banner_detail.png      # Research highlights banner (ACTIVE)
@@ -280,3 +291,22 @@ Consider adding:
 - Cleaner file organization
 - Faster loading times
 - Better maintainability
+
+## 🎯 **Current Features Status**
+
+### **✅ Fully Functional**
+- Dynamic logo animations (top and footer)
+- Working favicon with lab logo
+- Functional citation links to Cell Reports papers
+- Working social media links (LinkedIn, X, GitHub)
+- Google Maps integration
+- Job opportunities with direct links
+- Responsive design for all devices
+- Interactive team member modals
+
+### **🚀 Ready for Deployment**
+- GitHub Pages compatible
+- Custom domain ready (anastassiou-lab.org)
+- Mobile-optimized
+- Professional appearance
+- All links and functionality tested
