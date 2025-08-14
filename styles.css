@@ -70,6 +70,9 @@ body {
     object-fit: contain;
     position: relative;
     z-index: 1002;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    transition: filter 0.3s ease;
+    animation: navLogoColorShift 6s ease-in-out infinite;
 }
 
 .nav-menu {
@@ -1184,10 +1187,45 @@ section {
     width: auto;
     filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2475%) hue-rotate(187deg) brightness(118%) contrast(119%);
     transition: filter 0.3s ease;
+    animation: logoColorShift 8s ease-in-out infinite;
 }
 
 .footer-logo-img:hover {
     filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    animation-play-state: paused;
+}
+
+@keyframes logoColorShift {
+    0% {
+        filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2475%) hue-rotate(187deg) brightness(118%) contrast(119%);
+    }
+    25% {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    }
+    50% {
+        filter: brightness(0) saturate(100%) invert(39%) sepia(100%) saturate(2000%) hue-rotate(280deg) brightness(110%) contrast(120%);
+    }
+    75% {
+        filter: brightness(0) saturate(100%) invert(45%) sepia(90%) saturate(2200%) hue-rotate(150deg) brightness(115%) contrast(125%);
+    }
+    100% {
+        filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2475%) hue-rotate(187deg) brightness(118%) contrast(119%);
+    }
+}
+
+@keyframes navLogoColorShift {
+    0% {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    }
+    33.33% {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    }
+    66.66% {
+        filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2475%) hue-rotate(187deg) brightness(118%) contrast(119%);
+    }
+    100% {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    }
 }
 
 /* Modal */
