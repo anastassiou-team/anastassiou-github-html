@@ -65,7 +65,7 @@ body {
 }
 
 .nav-logo-img {
-    height: 60px;
+    height: 108px;
     width: auto;
     object-fit: contain;
     position: relative;
@@ -1168,6 +1168,23 @@ section {
     padding-top: 2rem;
     border-top: 1px solid #34495e;
     color: #bdc3c7;
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo-img {
+    height: 108px;
+    width: auto;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2475%) hue-rotate(187deg) brightness(118%) contrast(119%);
+    transition: filter 0.3s ease;
+}
+
+.footer-logo-img:hover {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
 /* Modal */
