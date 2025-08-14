@@ -261,8 +261,6 @@ Consider adding:
 
 **Built with ❤️ for the Anastassiou Lab**
 
-*Last updated: January 2025*
-
 ## 🧹 **Recent Cleanup & Organization**
 
 ### **Files Removed (Space Saved: ~100MB+)**
