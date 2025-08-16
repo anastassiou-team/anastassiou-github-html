@@ -18,15 +18,21 @@ This is where we setup the website of the Anastassiou Lab at Cedars-Sinai Medica
   - Professional contact information
 - **Responsive design** that works on all devices
 
+### **Modal System**
+- **Team member modals** - Detailed profiles with photos and bios
+- **Job opportunity modals** - Expanded job descriptions and requirements
+- **Click outside or press Escape** to close modals
+
 ### **Professional Content Sections**
 1. **Hero Section** - Lab overview with white-bordered call-to-action buttons
 2. **About** - Lab mission and research focus with question-driven approach
 3. **Research Highlights Banner** - Visual showcase of key findings
 4. **Team Members** - Interactive member profiles with modal windows
-5. **Publications** - Recent research outputs with press coverage links
-6. **GitHub** - Custom repository showcase with working citation links
-7. **Jobs** - Current job opportunities with direct Cedars-Sinai links
-8. **Contact & Location** - Lab location with embedded Google Maps
+5. **Projects** - Research project showcase with 5 main areas
+6. **Publications** - Recent research outputs with press coverage links
+7. **Methods** - Software tools and computational methods
+8. **Jobs** - Current job opportunities with modal details
+9. **Contact & Location** - Lab location with embedded Google Maps
 
 ### **Advanced Functionality**
 - **Working favicon** - Custom lab logo optimized for browser tabs
@@ -146,6 +152,19 @@ To add a new section:
 2. Add corresponding CSS in `styles.css`
 3. Add navigation link in the navbar
 4. Update JavaScript if needed
+
+### **Projects Section**
+
+The Projects section showcases 5 main research areas:
+- Growing Cells in Computers
+- Brain Circuit Simulations  
+- Brain Disease Modeling
+- Brain Modulation Technologies
+- Biophysics-informed ML & NeuroAI
+
+### **Methods Section**
+
+The Methods section (formerly GitHub) displays software tools and computational methods used in the lab.
 
 ### **Updating Content**
 

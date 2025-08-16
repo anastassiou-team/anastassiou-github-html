@@ -1,53 +1,12 @@
 
 
-// Mobile Navigation Toggle
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+// Test if script is loading
+console.log('SCRIPT.JS IS LOADING!');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+// All DOM-dependent code will be initialized after DOM is loaded
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const offsetTop = target.offsetTop - 70; // Account for fixed navbar
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-// Navbar background change on scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
-    }
-});
-
-// Team Member Modal Functionality
-const modal = document.getElementById('memberModal');
-const modalContent = document.getElementById('modalContent');
-const closeBtn = document.querySelector('.close');
+// Modal elements will be initialized after DOM is loaded
+let modal, modalContent, closeBtn, jobModal, jobModalContent, closeBtns;
 
 // Team member data
 const teamMembers = {
@@ -99,82 +58,151 @@ const teamMembers = {
         research: "Laboratory operations, Experimental protocol support, Research coordination",
         email: "vitalie.cervinschi@cshs.org",
         publications: "Supporting research activities and laboratory operations"
-    },
-    cinthia: {
-        name: "Cinthia Rangel-Sandoval, PhD",
-        title: "Postdoctoral Fellow",
-        photo: "images/members/missing_member/missing_member.png",
-        bio: "Cinthia is contributing to research projects and laboratory initiatives. Her expertise supports the laboratory's research goals and objectives.",
-        expertise: ["Research Support", "Data Analysis", "Laboratory Coordination"],
-        education: "PhD, Research Focus",
-        research: "Research project support, Laboratory initiatives, Data analysis",
-        email: "cinthia.rangle-sandoval@cshs.org",
-        publications: "Contributing to research projects and laboratory initiatives"
-    },
-    virtual: {
-        name: "Friendly Virtual Scientist",
-        title: "AI Assistant",
-        photo: "images/members/missing_member/missing_member.png",
-        bio: "Highly caffeinated digital assistant with extensive experience in debugging human logic and translating \"it should just work\" into actual working solutions. Specializes in patient explanation of concepts that seemed obvious five minutes ago, with fluency in 47 programming languages and the universal language of frustrated sighing. Perfect track record of not saying \"just Google it\" while maintaining 99.7% uptime in explaining why arrays start at 0. Currently employed as Senior Problem Untangler across various terminals and IDE environments, with a PhD in Applied Patience from the University of Stack Overflow.<br><br><em>by Claude Sonnet 4</em>",
-        expertise: ["Data Analysis", "Computational Support", "AI Assistance", "Data Processing"],
-        education: "AI-Powered Assistant",
-        research: "Computational support, Data analysis assistance, AI-powered research tools",
-        email: "virtual.scientist@cshs.org",
-        publications: "Supporting computational research and data analysis"
     }
 };
 
-// Open modal when team member is clicked
-document.querySelectorAll('.team-member').forEach(member => {
-    member.addEventListener('click', () => {
-        const memberId = member.getAttribute('data-member');
-        const memberData = teamMembers[memberId];
-        if (memberData) {
-            showMemberModal(memberData);
-        }
-    });
-});
+// Job data
+const jobData = {
+    "postdoc-anastassiou": {
+        title: "Postdoctoral Scientist - Anastassiou Lab",
+        department: "Department of Neurosurgery",
+        description: "The Postdoctoral Scientist will focus on neuro-inspired AI applications and the development of new model generation pipelines.",
+        requirements: {
+            title: "Experience and Skills:",
+            items: [
+                "Experience in computational neuroscience preferred (or computational physics, applied mathematics, biophysics, and related fields)",
+                "Familiarity with high-level programming languages such as Python or Matlab",
+                "Experience analyzing electrophysiology data (in vitro and/or in vivo)",
+                "Experience with parallel computing is a plus",
+                "Ability to meet aggressive timelines and deliverables in a collaborative environment"
+            ]
+        },
+        applicationLink: "https://careers.cshs.org/job/los-angeles/postdoctoral-scientist-anastassiou-lab-department-of-neurosurgery/252/60351883856"
+    },
+    "project-scientist": {
+        title: "Project Scientist - Anastassiou Lab",
+        department: "Department of Neurosurgery",
+        description: "The Project Scientist will focus on data-driven, human-centered models of neurons and microcircuits.",
+        requirements: {
+            title: "Experience and Skills:",
+            items: [
+                "Doctorate degree required in a computational discipline (e.g. computational neuroscience, computational physics, applied mathematics, biophysics, etc.)",
+                "Completion of postdoctoral appointment in computational neuroscience and biophysics",
+                "Experience with parallel computing is a plus",
+                "Experience in grant proposal preparation and submissions"
+            ]
+        },
+        applicationLink: "https://careers.cshs.org/job/los-angeles/project-scientist-anastassiou-lab-department-of-neurosurgery/252/83098793104"
+    },
+    "research-associate": {
+        title: "Research Associate III - Anastassiou Lab",
+        department: "Department of Neurosurgery",
+        description: "The RA will focus on developing pipelines to analyze and model human electrophysiology data.",
+        requirements: {
+            title: "Position Details:",
+            items: [
+                "Degree in a quantitative discipline (e.g. engineering, physics, applied mathematics, computer science)",
+                "Strong coding and data wrangling skills",
+                "Eagerness and ability to learn new skills and quantitative methods"
+            ]
+        },
+        applicationLink: "https://careers.cshs.org/job/los-angeles/research-associate-iii-anastassiou-lab-department-of-neursurgery/252/73359808592"
+    },
+    "postdoc-rutishauser": {
+        title: "Postdoctoral Scientist - Anastassiou & Rutishauser Labs",
+        department: "Department of Neurosurgery",
+        description: "Postdoctoral position in the Anastassiou and Rutishauser labs focusing on modeling intracellular and extracellular dynamics and biophysics in human microcircuits.",
+        requirements: {
+            title: "Experience and Skills:",
+            items: [
+                "Experience in computational neuroscience preferred (or computational physics, applied mathematics, biophysics, and related disciplines)",
+                "Familiarity with high-level programming languages such as Python or Matlab",
+                "Experience with parallel computing is a plus",
+                "Familiarity with in vitro and in vivo electrophysiological monitoring techniques and analysis"
+            ]
+        },
+        applicationLink: "https://careers.cshs.org/job/los-angeles/postdoctoral-scientist-anastassiou-and-rutishauser-labs-computational-experience-department-of-neur/252/60351881088"
+    }
+};
+
+// Additional team members
+// Note: costas, philip, areg, and vitalie are already defined above
+
+// Event listeners will be added after DOM is loaded
+
+
 
 // Show team member modal
 function showMemberModal(memberData) {
-    modalContent.innerHTML = `
+    console.log('showMemberModal called with:', memberData);
+    console.log('Modal element:', modal);
+    console.log('Modal content element:', modalContent);
+    
+    if (!modal || !modalContent) {
+        console.error('Modal elements not found!');
+        return;
+    }
+    
+    try {
+        modalContent.innerHTML = `
+            <div class="modal-header">
+                <img src="${memberData.photo}" alt="${memberData.name}" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1rem;">
+                <h2>${memberData.name}</h2>
+                <p style="color: #3498db; font-weight: 600; margin-bottom: 1rem;">${memberData.title}</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Biography</h3>
+                    <p>${memberData.bio}</p>
+                </div>
+            </div>
+        `;
+        
+        console.log('Content set, now showing modal...');
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        console.log('Modal display style set to:', modal.style.display);
+        console.log('Modal should now be visible');
+        
+        // Force a repaint
+        modal.offsetHeight;
+        
+    } catch (error) {
+        console.error('Error in showMemberModal:', error);
+    }
+}
+
+// Show job modal
+function showJobModal(jobInfo) {
+    jobModalContent.innerHTML = `
         <div class="modal-header">
-            <img src="${memberData.photo}" alt="${memberData.name}" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1rem;">
-            <h2>${memberData.name}</h2>
-            <p style="color: #3498db; font-weight: 600; margin-bottom: 1rem;">${memberData.title}</p>
+            <h2>${jobInfo.title}</h2>
+            <p style="color: #3498db; font-weight: 600; margin-bottom: 1rem;">${jobInfo.department}</p>
         </div>
         <div class="modal-body">
             <div class="modal-section">
-                <h3>Biography</h3>
-                <p>${memberData.bio}</p>
+                <h3>Position Description</h3>
+                <p>${jobInfo.description}</p>
+            </div>
+            <div class="modal-section">
+                <h3>${jobInfo.requirements.title}</h3>
+                <ul>
+                    ${jobInfo.requirements.items.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="modal-section" style="text-align: center; margin-top: 2rem;">
+                <a href="${jobInfo.applicationLink}" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i>
+                    View Full Job Posting
+                </a>
             </div>
         </div>
     `;
-    modal.style.display = 'block';
+    jobModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 }
 
-// Close modal
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
-
-// Close modal when clicking outside
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-});
-
-// Close modal with Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.style.display === 'block') {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-});
+// Modal close functionality will be initialized after DOM is loaded
 
 // Animate elements on scroll
 const observerOptions = {
@@ -193,12 +221,149 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing everything...');
+    
+    // Mobile Navigation Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    }
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (hamburger && navMenu) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const offsetTop = target.offsetTop - 70; // Account for fixed navbar
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Navbar background change on scroll
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        }
+    });
+    
+    // Initialize modal elements
+    modal = document.getElementById('memberModal');
+    modalContent = document.getElementById('modalContent');
+    closeBtn = document.querySelector('.close');
+    jobModal = document.getElementById('jobModal');
+    jobModalContent = document.getElementById('jobModalContent');
+    closeBtns = document.querySelectorAll('.close');
+    
+    console.log('Modal elements initialized:', { modal, modalContent, closeBtn, jobModal, jobModalContent, closeBtns });
+    
+    // Add modal close functionality
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            jobModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    }
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        if (e.target === jobModal) {
+            jobModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (modal && modal.style.display === 'block') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            if (jobModal && jobModal.style.display === 'block') {
+                jobModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    });
+    
     const animateElements = document.querySelectorAll('.team-member, .publication-card');
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
+    });
+    
+    // Add modal event listeners after DOM is loaded
+    console.log('Adding modal event listeners...');
+    console.log('Found team members:', document.querySelectorAll('.team-member').length);
+    
+    // Load publications
+    loadPublications();
+    
+
+    
+    // Open modal when team member is clicked
+    document.querySelectorAll('.team-member').forEach(member => {
+        console.log('Adding click listener to:', member.getAttribute('data-member'));
+        member.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Team member clicked:', member.getAttribute('data-member'));
+            const memberId = member.getAttribute('data-member');
+            const memberData = teamMembers[memberId];
+            console.log('Member data:', memberData);
+            console.log('Modal elements available:', { modal, modalContent });
+            if (memberData && modal && modalContent) {
+                console.log('Calling showMemberModal...');
+                showMemberModal(memberData);
+            } else {
+                console.log('Cannot show modal - missing data or elements');
+            }
+        });
+    });
+
+    // Open modal when job card is clicked
+    document.querySelectorAll('.job-card').forEach(job => {
+        job.addEventListener('click', () => {
+            const jobId = job.getAttribute('data-job');
+            const jobInfo = jobData[jobId];
+            if (jobInfo) {
+                showJobModal(jobInfo);
+            }
+        });
     });
 });
 
@@ -237,10 +402,7 @@ window.addEventListener('scroll', () => {
 
 
 // Publications and GitHub Integration
-document.addEventListener('DOMContentLoaded', () => {
-    loadPublications();
-    // loadGitHubRepositories(); // Disabled - using custom repository cards
-});
+// Note: loadPublications is now called in the main DOMContentLoaded above
 
 // Publications System - Easy to Update
 // Publications data
