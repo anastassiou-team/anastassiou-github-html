@@ -55,13 +55,13 @@ body {
 .nav-logo h2 {
     color: #2c3e50;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 4px;
 }
 
 .nav-logo-img {
