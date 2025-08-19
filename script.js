@@ -305,7 +305,7 @@ function showProjectModal(projectInfo) {
             <p>${projectInfo.longDescription}</p>
         </div>
         <div class="project-modal-image">
-            <img src="${projectInfo.image}" alt="${projectInfo.title}" onerror="this.style.display='none'">
+            <img src="${projectInfo.image}" alt="${projectInfo.title}" onerror="this.style.display='none'" onload="console.log('Image loaded successfully:', this.src)">
         </div>
         <div class="project-modal-details">
             <h3>Key Focus Areas:</h3>

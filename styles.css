@@ -258,6 +258,17 @@ body {
     line-height: 1.7;
 }
 
+.hero-description a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero-description a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
