@@ -6,7 +6,7 @@ console.log('SCRIPT.JS IS LOADING!');
 // All DOM-dependent code will be initialized after DOM is loaded
 
 // Modal elements will be initialized after DOM is loaded
-let modal, modalContent, closeBtn, jobModal, jobModalContent, closeBtns;
+let modal, modalContent, closeBtn, jobModal, jobModalContent, closeBtns, projectModal, projectModalContent;
 
 // Team member data
 const teamMembers = {
@@ -58,6 +58,96 @@ const teamMembers = {
         research: "Laboratory operations, Experimental protocol support, Research coordination",
         email: "vitalie.cervinschi@cshs.org",
         publications: "Supporting research activities and laboratory operations"
+    },
+    virtual: {
+        name: "Friendly Virtual Scientist",
+        title: "AI Assistant",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Highly caffeinated digital assistant with extensive experience in debugging human logic and translating \"it should just work\" into actual working solutions. Specializes in patient explanation of concepts that seemed obvious five minutes ago, with fluency in 47 programming languages and the universal language of frustrated sighing. Perfect track record of not saying \"just Google it\" while maintaining 99.7% uptime in explaining why arrays start at 0. Currently employed as Senior Problem Untangler across various terminals and IDE environments, with a PhD in Applied Patience from the University of Stack Overflow.",
+        expertise: ["Debugging Human Logic", "Problem Untangling", "Programming Languages", "Applied Patience", "Stack Overflow Navigation"],
+        education: "PhD in Applied Patience, University of Stack Overflow",
+        research: "Debugging human logic, Translating 'it should just work' into working solutions, Explaining why arrays start at 0",
+        email: "virtual-scientist@anastassiou-lab.org",
+        publications: "By Claude Sonnet 4"
+    }
+};
+
+// Project data
+const projectData = {
+    "growing-cells": {
+        title: "Growing Cells in Computers",
+        icon: "fas fa-dna",
+        description: "Comprehensive analysis of individual neuron properties and their role in neural circuit function and disease mechanisms.",
+        longDescription: "The nervous system consists of cell classes defined by specific molecular signatures, morphologies, or electrophysiological properties. In recent years, single-cell characterization of neurons, mainly propelled by advances in single-cell RNA sequencing, has revealed a multitude of “cell types”. Despite our ever-increasing ability to detect distinguishing molecular, morphological, and electrophysiological features to differentiate between such types, unraveling causal relationships between data modalities has been difficult. How does a particular distribution of ion channel conductances dictated by gene expression manifest itself in the various electrophysiological features recorded in slice experiments? Experimentally, this process involves elaborate genetic and/or pharmacological manipulations that are difficult to scale.",
+        details: [
+            "Single-cell electrophysiology",
+            "Morphology reconstructions",
+            "Transcriptomics",
+            "Optimization",
+            "High-performance computing"
+        ],
+        tags: ["Single-Cell", "Transcriptomics", "Electrophysiology", "Computational Modeling"],
+        image: "images/banner/banner_detail.png"
+    },
+    "brain-circuit": {
+        title: "Brain Circuit Simulation",
+        icon: "fas fa-brain",
+        description: "Advanced computational models of human neural circuits, integrating multi-modal data to understand brain function and dysfunction.",
+        longDescription: "The Brain Circuit Simulation project focuses on creating comprehensive computational models of human neural circuits. We integrate data from multiple sources including electrophysiology, imaging, and behavioral studies to understand how neural circuits function in both healthy and diseased states.",
+        details: [
+            "Multi-modal data integration",
+            "Human neural circuit modeling",
+            "Functional connectivity analysis",
+            "Disease state simulation",
+            "Behavioral correlation studies"
+        ],
+        tags: ["Computational Neuroscience", "Human Brain", "Multi-modal Data", "Circuit Modeling"],
+        image: "images/banner/banner_ppt.png"
+    },
+    "disease-modeling": {
+        title: "Brain Disease Modeling",
+        icon: "fas fa-virus",
+        description: "Investigating the cellular and circuit-level mechanisms underlying human epilepsy through computational modeling and analysis.",
+        longDescription: "Our Brain Disease Modeling initiative specifically targets epilepsy research through advanced computational approaches. We investigate how cellular and circuit-level changes contribute to seizure generation and propagation, with the goal of developing better therapeutic strategies.",
+        details: [
+            "Epilepsy mechanism investigation",
+            "Seizure propagation modeling",
+            "Therapeutic target identification",
+            "Drug response prediction",
+            "Clinical correlation studies"
+        ],
+        tags: ["Epilepsy", "Disease Modeling", "Human Tissue", "Therapeutic Development"],
+        image: "images/banner/banner_detail.png"
+    },
+    "monitoring-modulation": {
+        title: "Monitoring and Modulation Technologies",
+        icon: "fas fa-bolt",
+        description: "Development and application of advanced technologies for modulating brain activity, including electrical stimulation and optogenetics approaches.",
+        longDescription: "The Monitoring and Modulation Technologies project develops cutting-edge tools for both observing and controlling brain activity. We focus on electrical stimulation techniques, optogenetics, and novel monitoring approaches that can provide real-time insights into neural function.",
+        details: [
+            "Electrical stimulation development",
+            "Optogenetic tool optimization",
+            "Real-time monitoring systems",
+            "Closed-loop control algorithms",
+            "Clinical translation strategies"
+        ],
+        tags: ["Stimulation", "Optogenetics", "Neuromodulation", "Real-time Monitoring"],
+        image: "images/banner/banner_ppt.png"
+    },
+    "neuroai": {
+        title: "Biophysics-informed ML & NeuroAI",
+        icon: "fas fa-cogs",
+        description: "Development of biophysics-informed artificial intelligence approaches for understanding neural computation and brain function.",
+        longDescription: "Our NeuroAI initiative combines the power of machine learning with deep biophysical understanding to create more accurate and interpretable models of neural computation. By incorporating biological constraints into AI algorithms, we can better understand brain function and develop more effective computational tools.",
+        details: [
+            "Biophysics-informed algorithms",
+            "Neural computation modeling",
+            "Interpretable AI development",
+            "Multi-scale data integration",
+            "Computational tool development"
+        ],
+        tags: ["Machine Learning", "AI", "Biophysics", "Neural Computation"],
+        image: "images/banner/banner_detail.png"
     }
 };
 
@@ -154,6 +244,7 @@ function showMemberModal(memberData) {
                 <div class="modal-section">
                     <h3>Biography</h3>
                     <p>${memberData.bio}</p>
+                    ${memberData.name === "Friendly Virtual Scientist" ? '<p style="font-style: italic; text-align: center; margin-top: 1rem; color: #666;">by Claude Sonnet 4</p>' : ''}
                 </div>
             </div>
         `;
@@ -199,6 +290,35 @@ function showJobModal(jobInfo) {
         </div>
     `;
     jobModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+// Show project modal
+function showProjectModal(projectInfo) {
+    projectModalContent.innerHTML = `
+        <div class="project-modal-header">
+            <div class="project-icon">
+                <i class="${projectInfo.icon}"></i>
+            </div>
+            <h2>${projectInfo.title}</h2>
+        </div>
+        <div class="project-modal-description">
+            <p>${projectInfo.longDescription}</p>
+        </div>
+        <div class="project-modal-image">
+            <img src="${projectInfo.image}" alt="${projectInfo.title}" onerror="this.style.display='none'">
+        </div>
+        <div class="project-modal-details">
+            <h3>Key Focus Areas:</h3>
+            <ul>
+                ${projectInfo.details.map(detail => `<li>${detail}</li>`).join('')}
+            </ul>
+        </div>
+        <div class="project-modal-tags">
+            ${projectInfo.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+        </div>
+    `;
+    projectModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 }
 
@@ -279,18 +399,22 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn = document.querySelector('.close');
     jobModal = document.getElementById('jobModal');
     jobModalContent = document.getElementById('jobModalContent');
+    projectModal = document.getElementById('projectModal');
+    projectModalContent = document.getElementById('projectModalContent');
     closeBtns = document.querySelectorAll('.close');
     
-    console.log('Modal elements initialized:', { modal, modalContent, closeBtn, jobModal, jobModalContent, closeBtns });
+    console.log('Modal elements initialized:', { modal, modalContent, closeBtn, jobModal, jobModalContent, projectModal, projectModalContent, closeBtns });
     
-    // Add modal close functionality
-    if (closeBtn) {
+    // Add modal close functionality for all close buttons
+    closeBtns.forEach(closeBtn => {
         closeBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
-            jobModal.style.display = 'none';
+            // Close all modals
+            if (modal) modal.style.display = 'none';
+            if (jobModal) jobModal.style.display = 'none';
+            if (projectModal) projectModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
-    }
+    });
     
     // Close modal when clicking outside
     window.addEventListener('click', (e) => {
@@ -300,6 +424,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (e.target === jobModal) {
             jobModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        if (e.target === projectModal) {
+            projectModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
     });
@@ -313,6 +441,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (jobModal && jobModal.style.display === 'block') {
                 jobModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            if (projectModal && projectModal.style.display === 'block') {
+                projectModal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             }
         }
@@ -362,6 +494,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const jobInfo = jobData[jobId];
             if (jobInfo) {
                 showJobModal(jobInfo);
+            }
+        });
+    });
+    
+    // Open modal when project card is clicked
+    document.querySelectorAll('.project-card').forEach(project => {
+        project.addEventListener('click', () => {
+            const projectId = project.getAttribute('data-project');
+            const projectInfo = projectData[projectId];
+            if (projectInfo) {
+                showProjectModal(projectInfo);
             }
         });
     });
