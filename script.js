@@ -87,7 +87,7 @@ const projectData = {
             "High-performance computing"
         ],
         tags: ["Single-Cell", "Transcriptomics", "Electrophysiology", "Computational Modeling"],
-        image: "images/banner/banner_detail.png"
+        image: "images/projects/growing-cells/growing-cells.png"
     },
     "brain-circuit": {
         title: "Brain Circuit Simulation",
@@ -102,7 +102,7 @@ const projectData = {
             "Behavioral correlation studies"
         ],
         tags: ["Computational Neuroscience", "Human Brain", "Multi-modal Data", "Circuit Modeling"],
-        image: "images/banner/banner_ppt.png"
+        image: "images/projects/brain-circuit/brain-circuit.png"
     },
     "disease-modeling": {
         title: "Brain Disease Modeling",
@@ -122,23 +122,22 @@ const projectData = {
     "monitoring-modulation": {
         title: "Monitoring and Modulation Technologies",
         icon: "fas fa-bolt",
-        description: "Development and application of advanced technologies for modulating brain activity, including electrical stimulation and optogenetics approaches.",
+        description: "Development and application of advanced technologies for modulating brain activity in humans.",
         longDescription: "The Monitoring and Modulation Technologies project develops cutting-edge tools for both observing and controlling brain activity. We focus on electrical stimulation techniques, optogenetics, and novel monitoring approaches that can provide real-time insights into neural function.",
         details: [
-            "Electrical stimulation development",
-            "Optogenetic tool optimization",
+            "Electric stimulation protocols",
             "Real-time monitoring systems",
-            "Closed-loop control algorithms",
+            "Closed-loop algorithms",
             "Clinical translation strategies"
         ],
         tags: ["Stimulation", "Optogenetics", "Neuromodulation", "Real-time Monitoring"],
-        image: "images/banner/banner_ppt.png"
+        image: "images/projects/brain-tech/brain-tech.png"
     },
     "neuroai": {
         title: "Biophysics-informed ML & NeuroAI",
         icon: "fas fa-cogs",
         description: "Development of biophysics-informed artificial intelligence approaches for understanding neural computation and brain function.",
-        longDescription: "Our NeuroAI initiative combines the power of machine learning with deep biophysical understanding to create more accurate and interpretable models of neural computation. By incorporating biological constraints into AI algorithms, we can better understand brain function and develop more effective computational tools.",
+        longDescription: "As powerful as the human brain is, its structure is constrained by physics and biology rules that shape its function. The powerful machine learning systems of today do not follow such rules. We study how the rules and constraints imposed on the most efficient computer known to man, the human brain, can inspire new computational paradigms and topologies.",
         details: [
             "Biophysics-informed algorithms",
             "Neural computation modeling",
