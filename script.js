@@ -168,7 +168,7 @@ const projectData = {
     },
     "neuroai": {
         title: "Biophysics-informed ML & NeuroAI",
-        icon: "fas fa-cogs",
+        icon: "fas fa-robot",
         description: "Development of biophysics-informed artificial intelligence approaches for understanding neural computation and brain function.",
         longDescription: "As powerful as the human brain is, its structure is constrained by physics and biology rules that shape its function. The powerful machine learning systems of today do not follow such rules. We study how the rules and constraints imposed on the most efficient computer known to man, the human brain, can inspire new computational paradigms and topologies.",
         details: [
@@ -327,6 +327,32 @@ function showJobModal(jobInfo) {
 
 // Show project modal
 function showProjectModal(projectInfo) {
+    console.log('showProjectModal called with:', projectInfo);
+    console.log('Project title:', projectInfo.title);
+    
+    let additionalContent = '';
+    
+    // Add special content for the neuroai project
+    if (projectInfo.title === 'Biophysics-informed ML & NeuroAI') {
+        console.log('Matched neuroai project, showing special content');
+        additionalContent = `
+            <div class="project-modal-image">
+                <img src="images/projects/biophysML/signals-systems-psyche.png" alt="Signals, systems and psyche" onerror="this.style.display='none'" onload="console.log('Image loaded successfully:', this.src)">
+                <p class="project-citation">
+                    from '<a href="https://library.oapen.org/bitstream/handle/20.500.12657/28023/1001973.pdf?sequence=1#page=116" target="_blank" style="color: #3498db; text-decoration: none;">Signals, systems and psyche</a>' written together with Adam Shai
+                </p>
+            </div>
+        `;
+    } else {
+        console.log('Not neuroai project, showing default content');
+        // Default image for other projects
+        additionalContent = `
+            <div class="project-modal-image">
+                <img src="${projectInfo.image}" alt="${projectInfo.title}" onerror="this.style.display='none'" onload="console.log('Image loaded successfully:', this.src)">
+            </div>
+        `;
+    }
+    
     projectModalContent.innerHTML = `
         <div class="project-modal-header">
             <div class="project-icon">
@@ -337,9 +363,7 @@ function showProjectModal(projectInfo) {
         <div class="project-modal-description">
             <p>${projectInfo.longDescription}</p>
         </div>
-        <div class="project-modal-image">
-            <img src="${projectInfo.image}" alt="${projectInfo.title}" onerror="this.style.display='none'" onload="console.log('Image loaded successfully:', this.src)">
-        </div>
+        ${additionalContent}
         <div class="project-modal-details">
             <h3>Key Focus Areas:</h3>
             <ul>
