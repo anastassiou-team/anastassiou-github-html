@@ -63,7 +63,7 @@ const teamMembers = {
         name: "Vitalie Cervinschi",
         title: "Research Associate II",
         photo: "images/members/missing_member/missing_member.png",
-        bio: "Vitalie is supporting research activities and experimental protocols in the laboratory. His work focuses on maintaining laboratory operations and supporting ongoing research initiatives.",
+        bio: "Vitalie works on the simulation and analysis of extracellular electrophysiology data and developing classification workflows for cell type labeling.",
         expertise: ["Laboratory Operations", "Experimental Protocols", "Research Support", "Data Collection"],
         education: "Research Associate II, Cedars-Sinai Medical Center",
         research: "Laboratory operations, Experimental protocol support, Research coordination",
@@ -91,6 +91,17 @@ const teamMembers = {
         research: "Bio-inspired and spiking neural networks, Neuromorphic computing, Computational neuroscience modeling",
         email: "pavlos.poulos@cshs.org",
         publications: "Research in bio-inspired neural network architectures"
+    },
+    dianna: {
+        name: "Dianna Hidalgo",
+        title: "Graduate Student",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Dianna is a graduate student working on computational neuroscience research. She is co-supervised with <a href='https://klab.tch.harvard.edu/' target='_blank' style='color: #3498db; text-decoration: none;'>Gabriel Kreiman, Harvard Medical School</a>.",
+        expertise: ["Computational Neuroscience", "Neural Systems", "Research Methods", "Data Analysis"],
+        education: "Graduate Student",
+        research: "Computational neuroscience research",
+        email: "dianna.hidalgo@cshs.org",
+        publications: "Graduate student working on computational neuroscience research"
     }
 };
 
