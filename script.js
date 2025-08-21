@@ -126,11 +126,10 @@ const projectData = {
         title: "Brain Circuit Simulation",
         icon: "fas fa-brain",
         description: "Advanced computational models of human neural circuits, integrating multi-modal data to understand brain function and dysfunction.",
-        longDescription: "The Brain Circuit Simulation project focuses on creating comprehensive computational models of human neural circuits. We integrate data from multiple sources including electrophysiology, imaging, and behavioral studies to understand how neural circuits function in both healthy and diseased states.",
+        longDescription: "Over the years we have developed workflow to generatebio-realistic human microcircuit models that comprise of several major excitatory and inhibitorycell types connected using human-derived connectivity rules. We use these models to ask question about structure and function: how do the cellular properties and composition of human circuits shape their collective function and emergent dynamics?",
         details: [
             "Multi-modal data integration",
             "Human neural circuit modeling",
-            "Functional connectivity analysis",
             "Disease state simulation",
             "Behavioral correlation studies"
         ],
