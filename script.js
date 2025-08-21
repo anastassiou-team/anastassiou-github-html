@@ -163,7 +163,7 @@ const projectData = {
             "Closed-loop algorithms",
             "Clinical translation strategies"
         ],
-        tags: ["Stimulation", "Optogenetics", "Neuromodulation", "Real-time Monitoring"],
+        tags: ["Stimulation", "Neuromodulation", "Real-time Monitoring"],
         image: "images/projects/brain-tech/brain-tech.png"
     },
     "neuroai": {
