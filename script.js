@@ -48,6 +48,17 @@ const teamMembers = {
         email: "areg.peltekian@cshs.org",
         publications: "5+ conference presentations and manuscripts in preparation"
     },
+    cinthia: {
+        name: "Cinthia Rangel-Sandoval, PhD",
+        title: "Postdoctoral Fellow",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Cinthia is contributing to research projects and laboratory initiatives. Her work focuses on advancing our understanding of neural systems through collaborative research efforts. She is co-supervised with <a href='https://researchers.cedars-sinai.edu/David.Rowitch' target='_blank' style='color: #3498db; text-decoration: none;'>David Rowitch, Guerin Children's</a>.",
+        expertise: ["Research Coordination", "Laboratory Initiatives", "Neural Systems Research", "Collaborative Research"],
+        education: "PhD in Neuroscience",
+        research: "Contributing to research projects and laboratory initiatives",
+        email: "cinthia.rangel-sandoval@cshs.org",
+        publications: "Contributing to ongoing research projects and laboratory initiatives"
+    },
     vitalie: {
         name: "Vitalie Cervinschi",
         title: "Research Associate II",
@@ -69,6 +80,17 @@ const teamMembers = {
         research: "Debugging human logic, Translating 'it should just work' into working solutions, Explaining why arrays start at 0",
         email: "virtual-scientist@anastassiou-lab.org",
         publications: "By Claude Sonnet 4"
+    },
+    pavlos: {
+        name: "Pavlos Poulos",
+        title: "Graduate Student",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Pavlos is working on bio-inspired and spiking neural networks. His research focuses on developing computational models that mimic biological neural systems and exploring the potential of neuromorphic computing approaches. He is co-supervised with <a href='https://archimedesai.gr/en/researchers/themos-stafylakis' target='_blank' style='color: #3498db; text-decoration: none;'>Themos Stafylakis, Archimedes AI</a>.",
+        expertise: ["Bio-inspired Neural Networks", "Spiking Neural Networks", "Neuromorphic Computing", "Computational Modeling", "Machine Learning"],
+        education: "Currently pursuing PhD in Computational Neuroscience",
+        research: "Bio-inspired and spiking neural networks, Neuromorphic computing, Computational neuroscience modeling",
+        email: "pavlos.poulos@cshs.org",
+        publications: "Research in bio-inspired neural network architectures"
     }
 };
 
@@ -550,20 +572,10 @@ window.addEventListener('scroll', () => {
 // Publications data
 const publications = [
     {
-        title: "Associations between in vitro, in vivo and in silico cell classes in mouse primary visual cortex",
-        authors: "Wei, Y., et al.",
-        journal: "Nature Communications",
-        year: "2023",
-        doi: "10.1038/s41467-023-42340-0",
-        link: "https://www.nature.com/articles/s41467-023-37844-8",
-
-        abstract: "This study examines the relationships between different classification methods for cortical cell types, providing insights into how in vitro, in vivo, and computational approaches can be integrated to better understand neural diversity."
-    },
-    {
         title: "Cell-class-specific electric field entrainment of neural activity",
         authors: "Lee, S.Y., et al.",
         journal: "Neuron",
-        year: "2023",
+        year: "2024",
         doi: "10.1016/j.neuron.2023.02.014",
         link: "https://www.cell.com/neuron/fulltext/S0896-6273(24)00356-8",
         pressCoverage: [
@@ -574,6 +586,16 @@ const publications = [
             "https://www.cedars-sinai.org/newsroom/can-deep-brain-stimulation-help-more-patients/"
         ],
         abstract: "Research demonstrating how different cell classes respond uniquely to electric field stimulation, revealing cell-type-specific mechanisms of neural entrainment."
+    },
+    {
+        title: "Associations between in vitro, in vivo and in silico cell classes in mouse primary visual cortex",
+        authors: "Wei, Y., et al.",
+        journal: "Nature Communications",
+        year: "2023",
+        doi: "10.1038/s41467-023-42340-0",
+        link: "https://www.nature.com/articles/s41467-023-37844-8",
+
+        abstract: "This study examines the relationships between different classification methods for cortical cell types, providing insights into how in vitro, in vivo, and computational approaches can be integrated to better understand neural diversity."
     },
     {
         title: "Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types",
