@@ -139,8 +139,8 @@ const projectData = {
     "disease-modeling": {
         title: "Brain Disease Modeling",
         icon: "fas fa-virus",
-        description: "Investigating the cellular and circuit-level mechanisms underlying human epilepsy through computational modeling and analysis.",
-        longDescription: "Our Brain Disease Modeling initiative specifically targets epilepsy research through advanced computational approaches. We investigate how cellular and circuit-level changes contribute to seizure generation and propagation, with the goal of developing better therapeutic strategies.",
+        description: "Brain disorders like epilepsy or Alzheimer's disorder disrupt brain circuits at multiple spatiotemporal scales.",
+        longDescription: "Brain disorders like epilepsy or Alzheimer's disorder disrupt brain circuits at multiple spatiotemporal scales. To mechanistically understand the link between disease cause at the level of vulnerable cells and cell types, its progression and associated symptoms, we use brain circuit models to formulate hypotheses, test mechanisms of action, and assess therapeutic scenarios.",
         details: [
             "Epilepsy mechanism investigation",
             "Seizure propagation modeling",
