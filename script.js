@@ -123,7 +123,7 @@ const projectData = {
         image: "images/projects/growing-cells/growing-cells.png"
     },
     "brain-circuit": {
-        title: "Brain Circuit Simulation",
+        title: "Foundational model of human brain circuits",
         icon: "fas fa-brain",
         description: "Advanced computational models of human neural circuits, integrating multi-modal data to understand brain function and dysfunction.",
         longDescription: "Over the years we have developed workflow to generatebio-realistic human microcircuit models that comprise of several major excitatory and inhibitorycell types connected using human-derived connectivity rules. We use these models to ask question about structure and function: how do the cellular properties and composition of human circuits shape their collective function and emergent dynamics?",
