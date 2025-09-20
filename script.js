@@ -125,8 +125,8 @@ const projectData = {
     "brain-circuit": {
         title: "Foundational model of brain circuits",
         icon: "fas fa-brain",
-        description: "Advanced computational models of human neural circuits, integrating multi-modal data to understand brain function and dysfunction.",
-        longDescription: "Over the years we have developed workflow to generatebio-realistic human microcircuit models that comprise of several major excitatory and inhibitorycell types connected using human-derived connectivity rules. We use these models to ask question about structure and function: how do the cellular properties and composition of human circuits shape their collective function and emergent dynamics?",
+        description: "We generate a bio-realistic model of human microcircuit models that comprises of several major excitatory and inhibitory cell types connected using human-derived connectivity rules.",
+        longDescription: "We generate a bio-realistic model of human microcircuit models that comprises of several major excitatory and inhibitory cell types connected using human-derived connectivity rules. This model is foundational because it i) unifies multimodal cellular and circuit data into a single, coherent framework; ii) bridges spatiotemporal scales, iii) enables perturbation experiments that are impossible to perform in humans, and iv) generalizes by generating testable hypotheses about dynamics, computations and interventions it did not train on. This foundational model therefore offers a platform for mechanistic understanding -- not by learning what the human cortex does, but by implementing how it works. We use this model to ask questions about how the cellular properties and composition of human circuits shape their collective function and emergent dynamics.",
         details: [
             "Multi-modal data integration",
             "Human neural circuit modeling",
