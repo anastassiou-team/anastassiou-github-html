@@ -29,7 +29,7 @@ const teamMembers = {
     philip: {
         name: "Philip Wong, PhD",
         title: "Postdoctoral Fellow",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/PhilipW/philip-wong.jpg",
         bio: "Leading computational neuroscience projects at the level of human cellular and network biophysics and dynamics at Cedars-Sinai Medical Center. Philip specializes in advanced computational approaches to understanding neural systems.",
         expertise: ["Computational Neuroscience", "Biophysics", "Network Dynamics", "Human Neuroscience", "Computational Modeling"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
