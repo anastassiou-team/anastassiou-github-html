@@ -26,6 +26,17 @@ const teamMembers = {
             "Affiliated Researcher, Archimedes AI, Athena Research Center"
         ]
     },
+    nooshin: {
+        name: "Nooshin Abdollahi, PhD",
+        title: "Postdoctoral Fellow",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Nooshin Abdollahi is a postdoctoral fellow at Cedars-Sinai Medical Center specializing in growing cells in computers via gradient-based methods and high-performance computing. Her research focuses on using frameworks like JAXley to build detailed human neuron models and address fundamental questions about neural function.",
+        expertise: ["Gradient-Based Optimization", "High-Performance Computing", "Computational Neuroscience", "Biophysical Modeling", "JAXley"],
+        education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
+        research: "Growing cells in computers via gradient-based methods and HPC, Building human neuron models, Fundamental questions about neural function",
+        email: "",
+        publications: "Research in computational neuroscience and biophysical modeling"
+    },
     philip: {
         name: "Philip Wong, PhD",
         title: "Postdoctoral Fellow",
