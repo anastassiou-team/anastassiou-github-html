@@ -37,6 +37,17 @@ const teamMembers = {
         email: "philip.wong@cshs.org",
         publications: "Leading computational neuroscience research projects"
     },
+    shayan: {
+        name: "Shayan Farzad, PhD",
+        title: "Postdoctoral Fellow",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Shayan Farzad is a postdoctoral fellow at Cedars-Sinai Medical Center specializing in bio-realistic circuit simulations and high-performance computing. His research focuses on developing scalable computational approaches to model complex neural circuits and understanding emergent dynamics in large-scale brain networks.",
+        expertise: ["High-Performance Computing", "Circuit Simulations", "Computational Neuroscience", "Biophysical Modeling", "Parallel Computing"],
+        education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
+        research: "Bio-realistic circuit simulations and high-performance computing, Large-scale neural network modeling, Computational approaches to understanding brain dynamics",
+        email: "shayan.farzad@cshs.org",
+        publications: "Research in computational neuroscience and high-performance computing applications"
+    },
     areg: {
         name: "Areg Peltekian",
         title: "Graduate Student",
