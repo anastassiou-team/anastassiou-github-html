@@ -51,7 +51,7 @@ const teamMembers = {
     shayan: {
         name: "Shayan Farzad, PhD",
         title: "Postdoctoral Fellow",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/ShayanF/IMG_2942.jpg",
         bio: "Shayan Farzad is a postdoctoral fellow at Cedars-Sinai Medical Center specializing in bio-realistic circuit simulations and high-performance computing. His research focuses on developing scalable computational approaches to model complex neural circuits and understanding emergent dynamics in large-scale brain networks.",
         expertise: ["High-Performance Computing", "Circuit Simulations", "Computational Neuroscience", "Biophysical Modeling", "Parallel Computing"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
