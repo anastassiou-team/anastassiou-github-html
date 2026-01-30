@@ -81,6 +81,17 @@ const teamMembers = {
         email: "cinthia.rangel-sandoval@cshs.org",
         publications: "Contributing to ongoing research projects and laboratory initiatives"
     },
+    zeynep: {
+        name: "Zeynep Goktepe",
+        title: "Undergraduate Researcher",
+        photo: "images/members/missing_member/missing_member.png",
+        bio: "Zeynep Goktepe is an undergraduate researcher and Caltech sophomore working on multimodal cellular data modeling using gradient-based methods.",
+        expertise: ["Multimodal Cellular Data", "Gradient-Based Methods", "Computational Modeling", "Data Analysis"],
+        education: "Undergraduate Researcher, California Institute of Technology",
+        research: "Multimodal cellular data modeling using gradient-based methods",
+        email: "",
+        publications: "Undergraduate research in computational neuroscience"
+    },
     vitalie: {
         name: "Vitalie Cervinschi",
         title: "Research Associate II",
