@@ -96,10 +96,10 @@ const teamMembers = {
         name: "Katelyn Sadorf",
         title: "Undergraduate Researcher",
         photo: "images/members/missing_member/missing_member.png",
-        bio: "Katelyn Sadorf is an undergraduate researcher and Caltech sophomore working on principles of neural computation in physical and artificial brain circuits.",
+        bio: "Katelyn Sadorf is an undergraduate researcher and Caltech sophomore working on principles of neural computation in biological and artificial brain circuits.",
         expertise: ["Neural Computation", "Artificial Neural Networks", "Computational Neuroscience", "Brain Circuits"],
         education: "Undergraduate Researcher, California Institute of Technology",
-        research: "Principles of neural computation in physical and artificial brain circuits",
+        research: "Principles of neural computation in biological and artificial brain circuits",
         email: "",
         publications: "Undergraduate research in computational neuroscience"
     },
