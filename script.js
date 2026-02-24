@@ -84,7 +84,7 @@ const teamMembers = {
     zeynep: {
         name: "Zeynep Goktepe",
         title: "Undergraduate Researcher",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/ZeynepG/image_9-19-23_at_17.26_720.jpg",
         bio: "Zeynep Goktepe is an undergraduate researcher and Caltech sophomore working on multimodal cellular data modeling using gradient-based methods.",
         expertise: ["Multimodal Cellular Data", "Gradient-Based Methods", "Computational Modeling", "Data Analysis"],
         education: "Undergraduate Researcher, California Institute of Technology",
@@ -95,7 +95,7 @@ const teamMembers = {
     katelyn: {
         name: "Katelyn Sadorf",
         title: "Undergraduate Researcher",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/KatelynS/headshot.jpeg",
         bio: "Katelyn Sadorf is an undergraduate researcher and Caltech sophomore working on principles of neural computation in biological and artificial brain circuits.",
         expertise: ["Neural Computation", "Artificial Neural Networks", "Computational Neuroscience", "Brain Circuits"],
         education: "Undergraduate Researcher, California Institute of Technology",
