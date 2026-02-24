@@ -18,7 +18,7 @@ const teamMembers = {
         expertise: ["Neuroscience", "Computational Biology", "Electrophysiology", "Machine Learning", "High-Performance Computing"],
         education: "PhD in Computational Neuroscience, University of California, Berkeley",
         research: "Multimodal cellular data integration, Next-generation monitoring technologies, Electrical stimulation therapies",
-        email: "costas.anastassiou@cshs.org",
+        email: "costas.anastassiou@csmc.edu",
         publications: "50+ peer-reviewed publications in top-tier journals including Nature, Science, and Cell",
         affiliations: [
             "Associate Professor of Neurosurgery, Biomedical Sciences, and Neurology",
