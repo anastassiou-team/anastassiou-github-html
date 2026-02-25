@@ -141,12 +141,20 @@ body {
 /* Hero Section */
 .hero {
     min-height: 70vh;
-    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
     display: flex;
     align-items: center;
     padding-top: 70px;
     position: relative;
     overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.75) 0%, rgba(153, 27, 27, 0.75) 100%);
+    z-index: 0;
 }
 
 /* Animation Container */
@@ -216,6 +224,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    position: relative;
+    z-index: 1;
     align-items: center;
 }
 
@@ -247,16 +257,17 @@ body {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 1.5rem;
-    opacity: 0.9;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    opacity: 0.8;
+    font-weight: 500;
     line-height: 1.7;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description a {
@@ -287,28 +298,27 @@ body {
 }
 
 .btn-primary {
-    background: #dc2626;
-    color: white;
-    border: 2px solid white;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
 }
 
 .btn-primary:hover {
-    background: #991b1b;
+    background: black;
     color: white;
-    border: 2px solid white;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #dc2626;
+    background: black;
+    color: white;
     transform: translateY(-2px);
 }
 
@@ -400,7 +410,16 @@ section {
 
 /* About Section */
 .about {
-    background: #f8f9fa;
+    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.88);
+    z-index: 0;
 }
 
 .about-content {
@@ -501,6 +520,7 @@ section {
     z-index: 0;
 }
 
+.about > .container,
 .team > .container,
 .projects > .container,
 .publications > .container,
@@ -1063,9 +1083,11 @@ section {
 }
 
 .jobs-cta p {
-    color: #666;
+    color: #333;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(248, 249, 250, 0.6);
 }
 
 .github-content {
