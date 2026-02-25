@@ -488,9 +488,26 @@ section {
 
 /* Team Section */
 .team {
-    background: #f8f9fa;
+    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
     position: relative;
     z-index: 50;
+}
+
+.team::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.50);
+    z-index: 0;
+}
+
+.team > .container,
+.projects > .container,
+.publications > .container,
+.methods > .container,
+.jobs > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .team-grid {
@@ -707,6 +724,19 @@ section {
 }
 
 /* Publications Section */
+.publications {
+    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
+    position: relative;
+}
+
+.publications::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.50);
+    z-index: 0;
+}
+
 .publications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -716,8 +746,17 @@ section {
 
 /* Projects Section */
 .projects {
-    background: white;
+    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
+    position: relative;
     padding: 5rem 0;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.50);
+    z-index: 0;
 }
 
 .projects-grid {
@@ -893,13 +932,31 @@ section {
 
 /* Methods Section */
 .methods {
-    background: #f8f9fa;
+    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
+    position: relative;
+}
+
+.methods::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.50);
+    z-index: 0;
 }
 
 /* Jobs Section */
 .jobs {
-    background: white;
+    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
+    position: relative;
     padding: 5rem 0;
+}
+
+.jobs::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.50);
+    z-index: 0;
 }
 
 .jobs-intro {
