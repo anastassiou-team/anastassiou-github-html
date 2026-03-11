@@ -106,7 +106,7 @@ const teamMembers = {
     vitalie: {
         name: "Vitalie Cervinschi",
         title: "Research Associate II",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/VitalieC/vitalie_pic.webp",
         bio: "Vitalie works on the simulation and analysis of extracellular electrophysiology data and developing classification workflows for cell type labeling.",
         expertise: ["Laboratory Operations", "Experimental Protocols", "Research Support", "Data Collection"],
         education: "Research Associate II, Cedars-Sinai Medical Center",
