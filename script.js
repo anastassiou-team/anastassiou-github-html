@@ -62,7 +62,7 @@ const teamMembers = {
     areg: {
         name: "Areg Peltekian",
         title: "Graduate Student",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/AregP/IMG_8122.jpeg",
         bio: "Areg is investigating the role of cellular diversity in neural circuit function using electrophysiological and transcriptomic approaches. His work combines experimental techniques with computational analysis to understand how different cell types contribute to brain function.",
         expertise: ["Electrophysiology", "Transcriptomics", "Data Analysis", "MATLAB", "Python"],
         education: "BS in Neuroscience, UCLA; Currently pursuing PhD in Neuroscience",
