@@ -74,7 +74,7 @@ const teamMembers = {
         name: "Cinthia Rangel-Sandoval, PhD",
         title: "Postdoctoral Fellow",
         photo: "images/members/CinthiaSR/1000165166.jpg",
-        bio: "Cinthia is contributing to research projects and laboratory initiatives. Her work focuses on advancing our understanding of neural systems through collaborative research efforts. She is co-supervised with <a href='https://researchers.cedars-sinai.edu/David.Rowitch' target='_blank' style='color: #3498db; text-decoration: none;'>David Rowitch, Guerin Children's</a>.",
+        bio: "Cinthia is using multi-electrode whole-cell patch-clamp recordings in brain slices to study neural cell type excitability and the effect of electric fields on single neurons and circuits. She is co-supervised with <a href='https://researchers.cedars-sinai.edu/David.Rowitch' target='_blank' style='color: #3498db; text-decoration: none;'>David Rowitch, Guerin Children's</a>.",
         expertise: ["Research Coordination", "Laboratory Initiatives", "Neural Systems Research", "Collaborative Research"],
         education: "PhD in Neuroscience",
         research: "Contributing to research projects and laboratory initiatives",
