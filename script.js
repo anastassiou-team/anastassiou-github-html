@@ -128,7 +128,7 @@ const teamMembers = {
     pavlos: {
         name: "Pavlos Poulos",
         title: "Graduate Student",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/PavlosP/IMG_1167.JPG",
         bio: "Pavlos is working on bio-inspired and spiking neural networks. His research focuses on developing computational models that mimic biological neural systems and exploring the potential of neuromorphic computing approaches. He is co-supervised with <a href='https://archimedesai.gr/en/researchers/themos-stafylakis' target='_blank' style='color: #3498db; text-decoration: none;'>Themos Stafylakis, Archimedes AI</a>.",
         expertise: ["Bio-inspired Neural Networks", "Spiking Neural Networks", "Neuromorphic Computing", "Computational Modeling", "Machine Learning"],
         education: "Currently pursuing PhD in Computational Neuroscience",
