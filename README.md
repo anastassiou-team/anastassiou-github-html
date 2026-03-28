@@ -1,6 +1,6 @@
-# Anastassiou Lab Website
+# Anastassiou labwWebsite
 
-**Lab Website:** [anastassioulab.org](https://anastassioulab.org)
+**Lab website:** [anastassioulab.org](https://anastassioulab.org)
 
 This is where we setup the website of the Anastassiou Lab at Cedars-Sinai Medical Center.
 
