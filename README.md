@@ -2,232 +2,135 @@
 
 **Lab Website:** [anastassioulab.org](https://anastassioulab.org)
 
-This is where we setup the website of the Anastassiou Lab at Cedars-Sinai Medical Center.
+Source code for the website of the Costas A. Anastassiou Lab at Cedars-Sinai Medical Center. The site is a single-page HTML application hosted via GitHub Pages with a custom domain.
 
-## 🌟 Features
+---
 
-### **Dynamic Logo Animations**
-- **Top-left logo** - Cycles through black, red, and blue colors continuously
-- **Footer logo** - Multi-color cycling animation for visual appeal
-- **Professional appearance** - Always engaging without being distracting
+## How to Update Content
 
-### **Interactive Team Members Section**
-- **Clickable team member cards** that open detailed modal windows
-- **Comprehensive member profiles** including:
-  - Biography and research focus
-  - Official affiliations and profile links
-  - Hyperlinked collaborator references
-  - Professional contact information
-- **Responsive design** that works on all devices
+### Adding or Editing Team Members
 
-### **Modal System**
-- **Team member modals** - Detailed profiles with photos and bios
-- **Job opportunity modals** - Expanded job descriptions and requirements
-- **Click outside or press Escape** to close modals
+Each team member requires changes in **two files**:
 
-### **Professional Content Sections**
-1. **Hero Section** - Lab overview with white-bordered call-to-action buttons
-2. **About** - Lab mission and research focus with question-driven approach
-3. **Research Highlights Banner** - Visual showcase of key findings
-4. **Team Members** - Interactive member profiles with modal windows
-5. **Projects** - Research project showcase with 5 main areas
-6. **Publications** - Recent research outputs with press coverage links
-7. **Methods** - Software tools and computational methods
-8. **Jobs** - Current job opportunities with modal details
-9. **Contact & Location** - Lab location with embedded Google Maps
-
-### **Advanced Functionality**
-- **Working favicon** - Custom lab logo optimized for browser tabs
-- **Functional social links** - LinkedIn, X (Twitter), and GitHub all working
-- **Citation system** - All GitHub citations link to actual Cell Reports papers
-- **Responsive navigation** - Mobile-friendly with hamburger menu
-- **Professional styling** - Modern CSS with smooth animations
-
-## 🚀 Getting Started
-
-### **Prerequisites**
-- A modern web browser
-- Basic knowledge of HTML/CSS/JavaScript (for customization)
-
-### **Installation**
-1. Clone or download this repository
-2. Open `index.html` in your web browser
-3. The website should load with all functionality working
-
-### **Local Development Server**
-For testing on mobile devices or other browsers:
-```bash
-python3 -m http.server 8000
-```
-Then access via `http://YOUR_IP:8000`
-
-### **File Structure**
-```
-anastassiou-github-html/
-├── index.html              # Main HTML file
-├── styles.css              # CSS styles and responsive design
-├── script.js               # JavaScript functionality
-├── animation.mp4          # Hero section animation
-├── README.md              # This file
-├── UPDATE_PUBLICATIONS.md # Publication update guide
-└── images/                 # Image assets
-    ├── logo/               # Logo files
-    │   ├── ateam_logo_ppt_v3.svg  # Current lab logo (SVG format)
-    │   ├── ateam_logo_ppt_v3.png  # PNG version of current logo
-    │   ├── ateam_logo_ppt_v3_greyscale.png  # Greyscale version
-    │   ├── ateam_logo_ppt_v3_favicon.svg    # Favicon-optimized logo
-    │   ├── ateam_logo_ppt.pptx    # Logo source file (PowerPoint)
-    │   ├── ateam_logo_ppt_v2.tiff # Version 2 logo (TIFF)
-    │   ├── ateam_logo_ppt_v2.png  # Version 2 logo (PNG)
-    │   ├── ateam_logo_ppt_v2.pdf  # Version 2 logo (PDF)
-    │   └── ateam_logo.png         # Original logo version
-    ├── banner/             # Banner images
-    │   ├── banner_detail.png      # Research highlights banner (ACTIVE)
-    │   ├── banner_ppt.png         # Banner source image
-    │   └── banner_ppt.pptx        # Banner source file (PowerPoint)
-    └── members/            # Team member photos
-        ├── CostasA/        # Principal Investigator
-        │   ├── 29837-NS-SURG--Costas Anastassiou, PhD-Environmental 001-1280x1280.png  # Main card image
-        │   └── costas-anastassiou.png                                                    # Modal image
-        └── missing_member/ # Default member photos
-            ├── missing_member.png
-            └── missing_member.jpg
-```
-
-## 🎨 Customization
-
-### **Updating Lab Members**
-
-To add or modify team members, edit the `teamMembers` object in `script.js`:
+1. **`script.js`** — Add a member entry to the `teamMembers` object (starts at line ~12). This populates the modal that opens when a visitor clicks the member's card.
 
 ```javascript
-const teamMembers = {
-    newmember: {
-        name: "Dr. New Member",
-        title: "Research Scientist",
-        photo: "path/to/photo.jpg",
-        bio: "Member biography...",
-        expertise: ["Skill 1", "Skill 2"],
-        education: "Education details...",
-        research: "Research focus...",
-        email: "email@cshs.org",
-        publications: "Publication count..."
-    }
-    // ... other members
-};
+newmember: {
+    name: "Dr. New Member",
+    title: "Research Scientist",
+    photo: "images/members/NewMemberDir/photo.jpg",
+    modalPhoto: "images/members/NewMemberDir/photo.jpg",
+    bio: "Member biography...",
+    expertise: ["Skill 1", "Skill 2"],
+    education: "Education details...",
+    research: "Research focus...",
+    email: "email@csmc.edu",
+    publications: "Publication count or summary"
+}
 ```
 
-Then add the corresponding HTML in `index.html`:
+2. **`index.html`** — Add a card in the Team section (starts at line ~289). The `data-member` attribute must match the key you used in `script.js`.
 
 ```html
 <div class="team-member" data-member="newmember">
     <div class="member-photo">
-        <img src="path/to/photo.jpg" alt="Dr. New Member">
+        <img src="images/members/NewMemberDir/photo.jpg" alt="Dr. New Member">
     </div>
     <div class="member-info">
         <h3>Dr. New Member</h3>
         <p class="member-title">Research Scientist</p>
-        <!-- ... other info -->
     </div>
 </div>
 ```
 
-### **Changing Colors and Styling**
+3. **Add photo** — Create a folder under `images/members/` (e.g., `images/members/NewMemberDir/`) and place their photo there.
 
-The main color scheme is defined in `styles.css`:
+### Adding Publications
 
-```css
-:root {
-    --primary-color: #3498db;      /* Main blue */
-    --secondary-color: #667eea;    /* Gradient blue */
-    --accent-color: #2c3e50;      /* Dark blue */
-    --text-color: #333;            /* Main text */
-    --light-bg: #f8f9fa;          /* Light backgrounds */
+Edit the `publications` array in **`script.js`** (starts at line ~651). Add new entries at the **top** of the array so they appear first:
+
+```javascript
+{
+    title: "Your New Paper Title",
+    authors: "Author, A., et al.",
+    journal: "Journal Name",
+    year: "2025",
+    doi: "10.1000/doi123",
+    link: "https://doi.org/10.1000/doi123",
+    abstract: "Brief description of the paper.",
+    pressCoverage: [          // optional
+        "https://example.com/news-article"
+    ]
 }
 ```
 
-### **Adding New Sections**
+Save and push — the site will re-render the publications list automatically.
 
-To add a new section:
+**SEO note:** When adding publications, also add a corresponding static HTML block and `citation_*` meta tags in `index.html` (see the existing entries in the Publications section and `<head>` for the pattern). This ensures search engines and Google Scholar can index the papers even without executing JavaScript.
 
-1. Add the HTML structure in `index.html`
-2. Add corresponding CSS in `styles.css`
-3. Add navigation link in the navbar
-4. Update JavaScript if needed
+### Updating Projects
 
-### **Projects Section**
+Project cards are in `index.html` in the Projects section. Each card links to a project image under `images/projects/`. Edit the HTML directly.
 
-The Projects section showcases 5 main research areas:
-- Growing Cells in Computers
-- Brain Circuit Simulations  
-- Brain Disease Modeling
-- Brain Modulation Technologies
-- Biophysics-informed ML & NeuroAI
+### Updating Job Postings
 
-### **Methods Section**
+Job postings are in `index.html` in the Jobs section. Edit or add job cards directly in the HTML. The modal content is also in `index.html`.
 
-The Methods section (formerly GitHub) displays software tools and computational methods used in the lab.
+---
 
-### **Updating Content**
+## File Structure
 
-- **Research Areas**: Modify the cards in the research section
-- **Publications**: Update the publication cards with real data
-- **News**: Replace placeholder news with actual lab updates
-- **Contact Info**: Update with real contact details
+```
+anastassiou-github-html/
+├── index.html              # Main HTML file (single-page site)
+├── styles.css              # All CSS styles and responsive design
+├── script.js               # Team members, publications, and interactivity
+├── animation.mp4           # Hero section background animation
+├── robots.txt              # Search engine crawling rules
+├── sitemap.xml             # Sitemap for search engines
+├── CNAME                   # Custom domain config (anastassioulab.org)
+├── README.md               # This file
+├── UPDATE_PUBLICATIONS.md  # Quick-reference guide for adding publications
+└── images/
+    ├── logo/               # Lab logo (SVG, PNG, favicon variants)
+    ├── banner/             # Research highlights banner
+    ├── members/            # Team member photos (one folder per person)
+    │   ├── CostasA/
+    │   ├── ZeynepG/
+    │   ├── KatelynS/
+    │   ├── VitalieC/
+    │   ├── AregP/
+    │   ├── PavlosP/
+    │   ├── CinthiaSR/
+    │   ├── ShayanF/
+    │   ├── PhilipW/
+    │   └── missing_member/ # Default placeholder photo
+    └── projects/           # Project card images
+```
 
-## 📱 Responsive Design
+## SEO & Metadata
 
-The website is fully responsive and includes:
-- **Mobile-first approach** with hamburger navigation
-- **Flexible grids** that adapt to screen size
-- **Touch-friendly** interactive elements
-- **Optimized typography** for all devices
+The `<head>` section of `index.html` includes:
+- **Meta tags** — description, keywords, canonical URL
+- **Open Graph / Twitter cards** — branded previews when the URL is shared on social media
+- **JSON-LD structured data** — ResearchOrganization schema for Google Knowledge Graph
+- **Google Scholar citation tags** — `citation_*` meta tags for each listed publication
+- **Google Analytics** — tracking via gtag.js (ID: `G-07PMZGM386`)
 
-## 🔧 Technical Details
+## Deployment
 
-### **Technologies Used**
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with Grid and Flexbox
-- **Vanilla JavaScript** - No external dependencies
-- **Font Awesome** - Icons (loaded from CDN)
-- **Google Fonts** - Inter font family
+The site is deployed via **GitHub Pages** from the `main` branch. Pushing to `main` triggers an automatic deploy. The custom domain `anastassioulab.org` is configured via the `CNAME` file.
 
-### **Browser Support**
-- **Chrome** (latest) ✅
-- **Firefox** (latest) ✅ 
-- **Safari** (latest) ✅
-- **Edge** (latest) ✅
+### Local Development
 
+```bash
+python3 -m http.server 8000
+```
 
+Then open `http://localhost:8000` in your browser.
 
+## Technologies
 
-
-## 🚀 Deployment
-
-### **GitHub Pages**
-1. Push code to a GitHub repository
-2. Go to repository Settings > Pages
-3. Select source branch (usually `main`)
-4. Your site will be available at `https://username.github.io/repository-name`
-
-### Cross-Browser Testing
-- **Chrome**: Open `index.html` directly or use local server
-- **Firefox**: **Must use local server** (`http://localhost:8000`) for image compatibility
-- **Safari**: Works with both direct file and local server
-- **Edge**: Works with both direct file and local server
-
-### **Other Hosting**
-- Upload files to any web hosting service
-- Ensure all files are in the same directory
-- Test functionality after upload
-
-## 🤝 Contributing
-
-To contribute to the website:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-
+- HTML5, CSS3, vanilla JavaScript (no build step, no dependencies)
+- Font Awesome (CDN) for icons
+- Google Fonts (Inter, Crimson Text)

@@ -3,7 +3,7 @@
 ## **Quick Update Method:**
 
 ### **1. Open `script.js`**
-Find the `publications` array (around line 10-60)
+Find the `publications` array (starts at line ~651)
 
 ### **2. Add New Publication:**
 Add a new publication object at the beginning of the array:
