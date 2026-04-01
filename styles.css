@@ -1627,6 +1627,14 @@ section {
         display: none;
     }
 
+    .nav-logo-img {
+        height: 70px;
+    }
+
+    .nav-container {
+        padding: 0 15px;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
