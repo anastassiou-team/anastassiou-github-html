@@ -1302,6 +1302,25 @@ section {
     transition: color 0.3s ease;
 }
 
+/* Mobile: collapse publications to first 6 */
+.show-all-pubs-container {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .publications-grid.collapsed .publication-card:nth-child(n+7) {
+        display: none;
+    }
+    .show-all-pubs-container {
+        display: block;
+    }
+    .publications-grid:not(.collapsed) ~ .show-all-pubs-container {
+        display: none;
+    }
+}
+
 .press-link:hover {
     color: #991b1b;
     text-decoration: underline;

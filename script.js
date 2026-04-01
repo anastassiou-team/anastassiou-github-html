@@ -887,6 +887,8 @@ function loadPublications() {
                 ` : ''}
             </div>
         `).join('');
+        // Apply collapsed state for mobile show-more
+        publicationsGrid.classList.add('collapsed');
     }
 }
 
