@@ -1622,7 +1622,11 @@ section {
     .hamburger {
         display: flex;
     }
-    
+
+    .nav-logo h2 {
+        display: none;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
