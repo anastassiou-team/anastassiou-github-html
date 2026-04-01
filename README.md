@@ -64,12 +64,21 @@ Then access via `http://YOUR_IP:8000`
 ### **File Structure**
 ```
 anastassiou-github-html/
-├── index.html              # Main HTML file
+├── index.html              # Home page (Hero + About + Research Banner)
+├── team/index.html         # Team members & alumni (/team)
+├── projects/index.html     # Research projects (/projects)
+├── publications/index.html # Publications list (/publications)
+├── methods/index.html      # Methods & code (/methods)
+├── jobs/index.html         # Job opportunities (/jobs)
+├── contact/index.html      # Contact & location (/contact)
+├── 404.html                # Fallback redirect for old anchor URLs
 ├── styles.css              # CSS styles and responsive design
 ├── script.js               # JavaScript functionality
-├── animation.mp4          # Hero section animation
-├── README.md              # This file
-├── UPDATE_PUBLICATIONS.md # Publication update guide
+├── sitemap.xml             # Sitemap with all 7 routes
+├── robots.txt              # Search engine crawling rules
+├── animation.mp4           # Hero section animation
+├── README.md               # This file
+├── UPDATE_PUBLICATIONS.md  # Publication update guide
 └── images/                 # Image assets
     ├── logo/               # Logo files
     │   ├── ateam_logo_ppt_v3.svg  # Current lab logo (SVG format)
