@@ -198,8 +198,8 @@ const projectData = {
     "monitoring-modulation": {
         title: "Monitoring and Modulation Technologies",
         icon: "fas fa-bolt",
-        description: "Development and application of advanced technologies for modulating brain activity in humans.",
-        longDescription: "We develop tools and protocols to interpret electrophysiological recordings and stimulate brain circuits in new ways. EWe are particularly interested in developing protocols that selectively monitor and stimulate distinct cell types in the living brain.",
+        description: "Developing and applying computational methods to enhance monitoring capabilities and refine modulation strategies to control brain activity.",
+        longDescription: "Developing and applying computational methods to enhance monitoring capabilities and refine modulation strategies to control brain activity, including high-density neural probes and deep brain stimulation. Investigating how extracellular electric fields interact with neural circuits at the cellular and cell type level.",
         details: [
             "Electric stimulation protocols",
             "Real-time monitoring systems",
