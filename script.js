@@ -155,7 +155,7 @@ const projectData = {
         title: "Growing Cells in Computers",
         icon: "fas fa-dna",
         description: "Comprehensive analysis of individual neuron properties and their role in neural circuit function and disease mechanisms.",
-        longDescription: "The nervous system consists of cell classes defined by specific molecular signatures, morphologies, or electrophysiological properties. In recent years, single-cell characterization of neurons, mainly propelled by advances in single-cell RNA sequencing, has revealed a multitude of “cell types”. Despite our ever-increasing ability to detect distinguishing molecular, morphological, and electrophysiological features to differentiate between such types, unraveling causal relationships between data modalities has been difficult. How does a particular distribution of ion channel conductances dictated by gene expression manifest itself in the various electrophysiological features recorded in slice experiments? Experimentally, this process involves elaborate genetic and/or pharmacological manipulations that are difficult to scale.",
+        longDescription: “Building biophysically detailed neuron models constrained by multimodal data sets (patch-clamp electrophysiology, morphological reconstructions, single-cell transcriptomics, etc.). Using evolutionary and gradient-based optimization to generate models across cell types to create digital twins of biological neurons.”,
         details: [
             "Single-cell electrophysiology",
             "Morphology reconstructions",
