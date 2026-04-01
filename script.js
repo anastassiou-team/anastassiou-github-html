@@ -440,19 +440,33 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, initializing everything...');
-    
+    // Redirect legacy anchor URLs to new routes
+    const anchorRedirects = {
+        '#team': '/team',
+        '#projects': '/projects',
+        '#publications': '/publications',
+        '#methods': '/methods',
+        '#jobs': '/jobs',
+        '#contact': '/contact',
+        '#home': '/'
+    };
+    const hash = window.location.hash;
+    if (hash && anchorRedirects[hash]) {
+        window.location.replace(anchorRedirects[hash]);
+        return;
+    }
+
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
-    
+
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
     }
-    
+
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-menu a').forEach(link => {
         link.addEventListener('click', () => {
@@ -462,20 +476,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    
-    // Smooth scrolling for navigation links
+
+    // Smooth scrolling for same-page anchor links only
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const href = this.getAttribute('href');
+            const target = document.querySelector(href);
             if (target) {
-                const offsetTop = target.offsetTop - 70; // Account for fixed navbar
+                e.preventDefault();
+                const offsetTop = target.offsetTop - 70;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
                 });
             }
         });
+    });
+
+    // Highlight active nav link based on current page path
+    const currentPath = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        const href = link.getAttribute('href');
+        const linkPath = href.replace(/\/$/, '') || '/';
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        }
     });
     
     // Navbar background change on scroll
@@ -619,27 +644,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add active state to navigation based on scroll position
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
-});
+// Nav active state is now set in DOMContentLoaded based on pathname
 
 
 

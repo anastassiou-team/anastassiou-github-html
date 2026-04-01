@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — Anastassiou Lab</title>
+    <script>
+        // Redirect legacy anchor URLs to new routes
+        var defined = ['team','projects','publications','methods','jobs','contact'];
+        var hash = window.location.hash.replace('#','');
+        if (defined.indexOf(hash) !== -1) {
+            window.location.replace('/' + hash);
+        } else {
+            // Redirect to home after 3 seconds
+            setTimeout(function() { window.location.replace('/'); }, 3000);
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f8f9fa; color: #333; }
+        .container { text-align: center; }
+        a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Page Not Found</h1>
+        <p>Redirecting to <a href="/">home page</a>...</p>
+    </div>
+</body>
+</html>
