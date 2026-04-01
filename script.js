@@ -708,8 +708,61 @@ const publications = [
         year: "2021",
         doi: "10.1038/s41586-021-03913-5",
         link: "https://www.nature.com/articles/s41586-021-03813-8",
-
         abstract: "Comprehensive study of human neocortical expansion revealing glutamatergic neuron diversification, providing insights into human brain evolution and cellular diversity."
+    },
+    {
+        title: "Structure and function of axo-axonic inhibition",
+        authors: "Schneider-Mizell, C.M., et al.",
+        journal: "eLife",
+        year: "2021",
+        doi: "10.7554/eLife.73783",
+        link: "https://elifesciences.org/articles/73783",
+        abstract: "Analysis of axo-axonic inhibition structure and function, revealing organizational principles of chandelier cell connectivity in cortical circuits."
+    },
+    {
+        title: "Cellular classes in the human brain revealed in vivo by heartbeat-related modulation of the extracellular action potential waveform",
+        authors: "Mosher, C.P., et al.",
+        journal: "Cell Reports",
+        year: "2020",
+        doi: "10.1016/j.celrep.2020.02.027",
+        link: "https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30188-1",
+        abstract: "Identification of distinct neuronal classes in the living human brain using heartbeat-related modulation of extracellular action potential waveforms."
+    },
+    {
+        title: "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+        authors: "Gouwens, N.W., et al.",
+        journal: "Nature Neuroscience",
+        year: "2019",
+        doi: "10.1038/s41593-019-0417-0",
+        link: "https://www.nature.com/articles/s41593-019-0417-0",
+        abstract: "Systematic classification of neuron types in mouse visual cortex based on electrophysiological and morphological properties, establishing a comprehensive cell type taxonomy."
+    },
+    {
+        title: "h-Channels contribute to divergent intrinsic membrane properties of supragranular pyramidal neurons in human versus mouse cerebral cortex",
+        authors: "Kalmbach, B.E., et al.",
+        journal: "Neuron",
+        year: "2018",
+        doi: "10.1016/j.neuron.2018.10.012",
+        link: "https://www.cell.com/neuron/fulltext/S0896-6273(18)30900-0",
+        abstract: "Demonstration that h-channels drive key differences in intrinsic membrane properties between human and mouse supragranular pyramidal neurons."
+    },
+    {
+        title: "Fully integrated silicon probes for high-density recording of neural activity",
+        authors: "Jun, J.J., et al.",
+        journal: "Nature",
+        year: "2017",
+        doi: "10.1038/nature24636",
+        link: "https://www.nature.com/articles/nature24636",
+        abstract: "Development of Neuropixels — fully integrated silicon probes enabling high-density recording of neural activity across large brain volumes."
+    },
+    {
+        title: "From Maxwell's equations to the theory of current-source density analysis",
+        authors: "Gratiy, S.L., et al.",
+        journal: "European Journal of Neuroscience",
+        year: "2017",
+        doi: "10.1111/ejn.13534",
+        link: "https://onlinelibrary.wiley.com/doi/full/10.1111/ejn.13534",
+        abstract: "Rigorous derivation of current-source density analysis from Maxwell's equations, establishing the theoretical foundation for interpreting extracellular recordings."
     },
     {
         title: "Local field potentials encode place cell ensemble activation during hippocampal sharp wave ripples",
@@ -717,8 +770,35 @@ const publications = [
         journal: "Neuron",
         year: "2015",
         doi: "10.1016/j.neuron.2015.09.014",
-        link: "https://www.cell.com/neuron/fulltext/S0896-6273(15)00636-4?elsca1=etoc&elsca2=email&elsca3=0896-6273_20150805_87_3_&elsca4=Cell+Press",
+        link: "https://www.cell.com/neuron/fulltext/S0896-6273(15)00636-4",
         abstract: "Investigation of how local field potentials reflect the coordinated activity of place cells during hippocampal sharp wave ripples, linking cellular and network dynamics."
+    },
+    {
+        title: "Ephaptic coupling to endogenous electric field activity: why bother?",
+        authors: "Anastassiou, C.A. & Koch, C.",
+        journal: "Current Opinion in Neurobiology",
+        year: "2015",
+        doi: "10.1016/j.conb.2014.09.002",
+        link: "https://www.sciencedirect.com/science/article/abs/pii/S0959438814001809",
+        abstract: "Review article examining the functional significance of ephaptic coupling to endogenous electric fields in the brain and its implications for neural computation."
+    },
+    {
+        title: "Cell type- and activity-dependent extracellular correlates of intracellular spiking",
+        authors: "Anastassiou, C.A., et al.",
+        journal: "Journal of Neurophysiology",
+        year: "2015",
+        doi: "10.1152/jn.00628.2014",
+        link: "https://journals.physiology.org/doi/abs/10.1152/jn.00628.2014",
+        abstract: "Characterization of the relationship between intracellular spiking activity and extracellular signal features across different cell types and activity states."
+    },
+    {
+        title: "Theta phase segregation of input-specific gamma patterns in entorhinal-hippocampal networks",
+        authors: "Schomburg, E.W., et al.",
+        journal: "Neuron",
+        year: "2014",
+        doi: "10.1016/j.neuron.2014.08.051",
+        link: "https://www.cell.com/neuron/fulltext/S0896-6273(14)00781-8",
+        abstract: "Discovery that distinct gamma frequency patterns from different inputs are segregated to specific theta phases in entorhinal-hippocampal networks."
     },
     {
         title: "A biophysically detailed model of neocortical local field potentials predicts the critical role of active membrane currents",
@@ -742,6 +822,15 @@ const publications = [
         abstract: "Comprehensive review of the biophysical origins of extracellular electrical signals, providing fundamental insights into neural recording techniques."
     },
     {
+        title: "The spiking component of oscillatory extracellular potentials in the rat hippocampus",
+        authors: "Schomburg, E.W., et al.",
+        journal: "Journal of Neuroscience",
+        year: "2012",
+        doi: "10.1523/JNEUROSCI.0656-12.2012",
+        link: "https://www.jneurosci.org/content/32/34/11798",
+        abstract: "Analysis of spiking contributions to oscillatory extracellular potentials in the hippocampus, revealing how action potentials shape local field potential dynamics."
+    },
+    {
         title: "Ephaptic coupling of cortical neurons",
         authors: "Anastassiou, C.A.*, Perin, R.*, et al.",
         journal: "Nature Neuroscience",
@@ -756,6 +845,15 @@ const publications = [
             "https://www.caltech.edu/about/news/neurobiologists-find-weak-electrical-fields-brain-help-neurons-fire-together-1671"
         ],
         abstract: "Demonstration of ephaptic coupling between cortical neurons, revealing a novel mechanism of neural communication through extracellular electric fields."
+    },
+    {
+        title: "The effect of spatially inhomogeneous extracellular electric fields on neurons",
+        authors: "Anastassiou, C.A., et al.",
+        journal: "Journal of Neuroscience",
+        year: "2010",
+        doi: "10.1523/JNEUROSCI.3635-09.2010",
+        link: "https://www.jneurosci.org/content/30/5/1925",
+        abstract: "Computational and experimental analysis of how spatially non-uniform extracellular electric fields influence neuronal activity, with implications for brain stimulation."
     }
 ];
 
