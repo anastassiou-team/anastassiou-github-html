@@ -36,11 +36,20 @@ This is where we setup the website of the Anastassiou Lab at Cedars-Sinai Medica
 8. **Jobs** - Current job opportunities with modal details
 9. **Contact & Location** - Lab location with embedded Google Maps
 
+### **SEO & Discoverability**
+- **Multi-page architecture** - 7 independently indexable routes for search engine discovery
+- **Per-page SEO** - Unique titles, meta descriptions, canonical URLs, and Open Graph tags per page
+- **Structured data** - JSON-LD schemas: ResearchOrganization (/), Person (/team), JobPosting (/jobs)
+- **Google Scholar** - Citation meta tags for 20 publications on /publications
+- **Sitemap & robots.txt** - Full sitemap with all 7 routes
+- **Legacy URL support** - Old /#anchor URLs redirect to new routes automatically
+
 ### **Advanced Functionality**
 - **Working favicon** - Custom lab logo optimized for browser tabs
 - **Functional social links** - LinkedIn, X (Twitter), and GitHub all working
 - **Citation system** - All GitHub citations link to actual Cell Reports papers
 - **Responsive navigation** - Mobile-friendly with hamburger menu
+- **Mobile-optimized publications** - Show first 6, expandable to full 20
 - **Professional styling** - Modern CSS with smooth animations
 
 ## 🚀 Getting Started
