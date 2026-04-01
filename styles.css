@@ -63,6 +63,8 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+    overflow: hidden;
+    min-width: 0;
 }
 
 .nav-logo-img {
@@ -128,6 +130,9 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
+    z-index: 1010;
+    padding: 10px;
 }
 
 .hamburger span {
