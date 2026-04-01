@@ -167,10 +167,10 @@ const projectData = {
         image: "images/projects/growing-cells/growing-cells.png"
     },
     "brain-circuit": {
-        title: "Foundational model of brain circuits",
+        title: "Foundational models of brain circuits",
         icon: "fas fa-brain",
-        description: "We generate a bio-realistic model of human microcircuit models that comprises of several major excitatory and inhibitory cell types connected using human-derived connectivity rules.",
-        longDescription: "We generate a bio-realistic model of human microcircuit models that comprises of several major excitatory and inhibitory cell types connected using human-derived connectivity rules. This model is foundational because it i) unifies multimodal cellular and circuit data into a single, coherent framework; ii) bridges spatiotemporal scales, iii) enables perturbation experiments that are impossible to perform in humans, and iv) generalizes by generating testable hypotheses about dynamics, computations and interventions it did not train on. <strong>This foundational model therefore offers a platform for mechanistic understanding -- not by learning what the human cortex does, but by implementing how it works.</strong> We use this model to ask questions about how the cellular properties and composition of human circuits shape their collective function and emergent dynamics.",
+        description: "Bottom-up data-driven models of human neural circuits, integrating multimodal data to understand brain function and dysfunction.",
+        longDescription: "Bottom-up data-driven models of human neural circuits, integrating multimodal data to understand brain function and dysfunction. Simulating brain circuits with tens of thousands of bio-realistic and interconnected neurons to understand computational principles of the brain and the biophysics behind them.",
         details: [
             "Multi-modal data integration",
             "Human neural circuit modeling",
