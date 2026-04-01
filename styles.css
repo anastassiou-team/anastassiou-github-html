@@ -1668,6 +1668,10 @@ section {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .team-member.featured .member-photo {
+        margin: 0 auto;
+    }
     
     .visualization-content {
         grid-template-columns: 1fr;
