@@ -29,7 +29,7 @@ const teamMembers = {
     nooshin: {
         name: "Nooshin Abdollahi, PhD",
         title: "Postdoctoral Fellow",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "images/members/NooshinA/1700789091837.jpeg",
         bio: "Nooshin Abdollahi is a postdoctoral fellow at Cedars-Sinai Medical Center specializing in growing cells in computers via gradient-based methods and high-performance computing. Her research focuses on using frameworks like JAXley to build detailed human neuron models and address fundamental questions about neural function.",
         expertise: ["Gradient-Based Optimization", "High-Performance Computing", "Computational Neuroscience", "Biophysical Modeling", "JAXley"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
