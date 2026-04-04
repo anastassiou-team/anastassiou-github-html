@@ -616,11 +616,23 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Open modal when project card is clicked
     document.querySelectorAll('.project-card').forEach(project => {
-        project.addEventListener('click', () => {
+        const openProject = () => {
             const projectId = project.getAttribute('data-project');
             const projectInfo = projectData[projectId];
             if (projectInfo) {
                 showProjectModal(projectInfo);
+            }
+        };
+        project.addEventListener('click', openProject);
+        // iOS Safari: tap on elements with :hover transforms requires double-tap.
+        // Handle touchend directly to ensure single-tap works on mobile.
+        let touchMoved = false;
+        project.addEventListener('touchstart', () => { touchMoved = false; }, { passive: true });
+        project.addEventListener('touchmove', () => { touchMoved = true; }, { passive: true });
+        project.addEventListener('touchend', (e) => {
+            if (!touchMoved) {
+                e.preventDefault();
+                openProject();
             }
         });
     });

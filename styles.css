@@ -804,9 +804,16 @@ section {
     cursor: pointer;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+@media (hover: hover) {
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        border-color: #3498db;
+    }
+}
+
+.project-card:active {
+    transform: scale(0.98);
     border-color: #3498db;
 }
 
