@@ -799,13 +799,15 @@ section {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
     border-color: #3498db;
-    cursor: pointer;
 }
 
 .project-icon {
@@ -850,12 +852,17 @@ section {
     color: #3498db;
     font-size: 0.9rem;
     font-weight: 500;
-    opacity: 0.8;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
 
-.project-card:hover .project-cta .click-hint {
-    opacity: 1;
+@media (hover: hover) {
+    .project-cta .click-hint {
+        opacity: 0.8;
+    }
+    .project-card:hover .project-cta .click-hint {
+        opacity: 1;
+    }
 }
 
 /* Project Modal Styles */
