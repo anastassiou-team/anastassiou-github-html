@@ -615,24 +615,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Open modal when project card is clicked
+    // iOS tap-through is handled via @media (hover: hover) gating in CSS — no touchend hack needed.
     document.querySelectorAll('.project-card').forEach(project => {
-        const openProject = () => {
+        project.addEventListener('click', () => {
             const projectId = project.getAttribute('data-project');
             const projectInfo = projectData[projectId];
             if (projectInfo) {
                 showProjectModal(projectInfo);
-            }
-        };
-        project.addEventListener('click', openProject);
-        // iOS Safari: tap on elements with :hover transforms requires double-tap.
-        // Handle touchend directly to ensure single-tap works on mobile.
-        let touchMoved = false;
-        project.addEventListener('touchstart', () => { touchMoved = false; }, { passive: true });
-        project.addEventListener('touchmove', () => { touchMoved = true; }, { passive: true });
-        project.addEventListener('touchend', (e) => {
-            if (!touchMoved) {
-                e.preventDefault();
-                openProject();
             }
         });
     });
