@@ -253,6 +253,14 @@
       });
       log('listeners attached. project-card count: ' + document.querySelectorAll('.project-card').length);
 
+      // Check if script.js's top-level functions exist on window
+      // (they should, because function declarations at script-top-level become globals)
+      setTimeout(function(){
+        log('TEST showProjectModal=' + typeof window.showProjectModal +
+            ' showMemberModal=' + typeof window.showMemberModal +
+            ' loadPublications=' + typeof window.loadPublications);
+      }, 500);
+
       // Log when DOMContentLoaded fires and show DOM state after script.js runs
       document.addEventListener('DOMContentLoaded', function(){
         log('DOMContentLoaded fired');
