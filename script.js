@@ -13,7 +13,7 @@ const teamMembers = {
     costas: {
         name: "Costas Anastassiou, PhD",
         title: "Principal Investigator",
-        photo: "images/members/CostasA/costas-anastassiou.png",
+        photo: "/images/members/CostasA/costas-anastassiou.png",
         bio: "Costas Anastassiou is Associate Professor of Neurosurgery, Biomedical Sciences and Neurology at the Cedars-Sinai Medical Center (Los Angeles, California). Between 2007 and 2013, Costas was a postdoctoral researcher at the California Institute of Technology with <a href='https://en.wikipedia.org/wiki/Christof_Koch' target='_blank' style='color: #3498db; text-decoration: none;'>Christof Koch</a> and collaborated with <a href='https://med.nyu.edu/faculty/gyorgy-buzsaki' target='_blank' style='color: #3498db; text-decoration: none;'>Gyorgy Buzsaki (NYU)</a> and <a href='https://en.wikipedia.org/wiki/Henry_Markram' target='_blank' style='color: #3498db; text-decoration: none;'>Henry Markram (EPFL)</a>. In 2013 he joined the Allen Institute for Brain Science in Seattle as scientist and Assistant Investigator. Costas' postdoctoral work was supported by three postdoctoral awards by the Engineering Physics and Sciences Research Council (2007) and the Swiss National Science foundation (2007, 2010). His work on the biophysics of brain computations received the 2016 Swiss National Science foundation Professor award. Costas' graduate thesis on nonlinear time-series analysis of electrochemical and biological data with <a href='https://profiles.imperial.ac.uk/d.ohare' target='_blank' style='color: #3498db; text-decoration: none;'>Danny O'Hare</a> and <a href='https://profiles.imperial.ac.uk/k.parker' target='_blank' style='color: #3498db; text-decoration: none;'>Kim Parker</a> at Imperial College London was supported by an EPSRC graduate fellowship. Costas holds a degree in chemical engineering (Dipl. Ing.) from the Swiss Federal Institute of Technology (ETH Zurich).",
         expertise: ["Neuroscience", "Computational Biology", "Electrophysiology", "Machine Learning", "High-Performance Computing"],
         education: "PhD in Computational Neuroscience, University of California, Berkeley",
@@ -29,7 +29,7 @@ const teamMembers = {
     nooshin: {
         name: "Nooshin Abdollahi, PhD",
         title: "Postdoctoral Fellow",
-        photo: "images/members/NooshinA/1700789091837.jpeg",
+        photo: "/images/members/NooshinA/1700789091837.jpeg",
         bio: "Nooshin Abdollahi is a postdoctoral fellow at Cedars-Sinai Medical Center specializing in growing cells in computers via gradient-based methods and high-performance computing. Her research focuses on how human neurons differ from other species and address fundamental questions about computation at the cellular and circuit level.",
         expertise: ["Gradient-Based Optimization", "High-Performance Computing", "Computational Neuroscience", "Biophysical Modeling", "JAXley"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
@@ -40,7 +40,7 @@ const teamMembers = {
     philip: {
         name: "Philip Wong, PhD",
         title: "Postdoctoral Fellow",
-        photo: "images/members/PhilipW/philip-wong.jpg",
+        photo: "/images/members/PhilipW/philip-wong.jpg",
         bio: "Leading computational neuroscience projects at the level of human cellular and network biophysics and dynamics at Cedars-Sinai Medical Center. Philip specializes in advanced computational approaches to understanding neural systems.",
         expertise: ["Computational Neuroscience", "Biophysics", "Network Dynamics", "Human Neuroscience", "Computational Modeling"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
@@ -51,7 +51,7 @@ const teamMembers = {
     shayan: {
         name: "Shayan Farzad, PhD",
         title: "Postdoctoral Fellow",
-        photo: "images/members/ShayanF/IMG_2942.jpg",
+        photo: "/images/members/ShayanF/IMG_2942.jpg",
         bio: "Shayan Farzad is a postdoctoral fellow at Cedars-Sinai Medical Center specializing in bio-realistic circuit simulations and high-performance computing. His research focuses on developing scalable computational approaches to model complex neural circuits and understanding emergent dynamics in large-scale brain networks.",
         expertise: ["High-Performance Computing", "Circuit Simulations", "Computational Neuroscience", "Biophysical Modeling", "Parallel Computing"],
         education: "Postdoctoral Fellow, Cedars-Sinai Medical Center",
@@ -62,7 +62,7 @@ const teamMembers = {
     areg: {
         name: "Areg Peltekian",
         title: "Graduate Student",
-        photo: "images/members/AregP/IMG_8122.jpeg",
+        photo: "/images/members/AregP/IMG_8122.jpeg",
         bio: "Areg is investigating the role of cellular diversity in neural circuit function using electrophysiological and transcriptomic approaches. His work combines experimental techniques with computational analysis to understand how different cell types contribute to brain function.",
         expertise: ["Electrophysiology", "Transcriptomics", "Data Analysis", "MATLAB", "Python"],
         education: "BS in Neuroscience, UCLA; Currently pursuing PhD in Neuroscience",
@@ -73,7 +73,7 @@ const teamMembers = {
     cinthia: {
         name: "Cinthia Rangel-Sandoval, PhD",
         title: "Postdoctoral Fellow",
-        photo: "images/members/CinthiaSR/1000165166.jpg",
+        photo: "/images/members/CinthiaSR/1000165166.jpg",
         bio: "Cinthia is using multi-electrode whole-cell patch-clamp recordings in brain slices to study neural cell type excitability and the effect of electric fields on single neurons and circuits. She is co-supervised with <a href='https://researchers.cedars-sinai.edu/David.Rowitch' target='_blank' style='color: #3498db; text-decoration: none;'>David Rowitch, Guerin Children's</a>.",
         expertise: ["Research Coordination", "Laboratory Initiatives", "Neural Systems Research", "Collaborative Research"],
         education: "PhD in Neuroscience",
@@ -84,7 +84,7 @@ const teamMembers = {
     zeynep: {
         name: "Zeynep Goktepe",
         title: "Undergraduate Researcher",
-        photo: "images/members/ZeynepG/image_9-19-23_at_17.26_720.jpg",
+        photo: "/images/members/ZeynepG/image_9-19-23_at_17.26_720.jpg",
         bio: "Zeynep Goktepe is an undergraduate researcher and Caltech sophomore working on multimodal cellular data modeling using gradient-based methods.",
         expertise: ["Multimodal Cellular Data", "Gradient-Based Methods", "Computational Modeling", "Data Analysis"],
         education: "Undergraduate Researcher, California Institute of Technology",
@@ -95,7 +95,7 @@ const teamMembers = {
     katelyn: {
         name: "Katelyn Sadorf",
         title: "Undergraduate Researcher",
-        photo: "images/members/KatelynS/headshot.jpeg",
+        photo: "/images/members/KatelynS/headshot.jpeg",
         bio: "Katelyn Sadorf is an undergraduate researcher and Caltech sophomore working on principles of neural computation in biological and artificial brain circuits.",
         expertise: ["Neural Computation", "Artificial Neural Networks", "Computational Neuroscience", "Brain Circuits"],
         education: "Undergraduate Researcher, California Institute of Technology",
@@ -106,7 +106,7 @@ const teamMembers = {
     vitalie: {
         name: "Vitalie Cervinschi",
         title: "Research Associate II",
-        photo: "images/members/VitalieC/vitalie_pic.webp",
+        photo: "/images/members/VitalieC/vitalie_pic.webp",
         bio: "Vitalie works on the simulation and analysis of extracellular electrophysiology data and developing classification workflows for cell type labeling.",
         expertise: ["Laboratory Operations", "Experimental Protocols", "Research Support", "Data Collection"],
         education: "Research Associate II, Cedars-Sinai Medical Center",
@@ -117,7 +117,7 @@ const teamMembers = {
     virtual: {
         name: "Friendly Virtual Scientist",
         title: "AI Assistant",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "/images/members/missing_member/missing_member.png",
         bio: "Highly caffeinated digital assistant with extensive experience in debugging human logic and translating \"it should just work\" into actual working solutions. Specializes in patient explanation of concepts that seemed obvious five minutes ago, with fluency in 47 programming languages and the universal language of frustrated sighing. Perfect track record of not saying \"just Google it\" while maintaining 99.7% uptime in explaining why arrays start at 0. Currently employed as Senior Problem Untangler across various terminals and IDE environments, with a PhD in Applied Patience from the University of Stack Overflow.",
         expertise: ["Debugging Human Logic", "Problem Untangling", "Programming Languages", "Applied Patience", "Stack Overflow Navigation"],
         education: "PhD in Applied Patience, University of Stack Overflow",
@@ -128,7 +128,7 @@ const teamMembers = {
     pavlos: {
         name: "Pavlos Poulos",
         title: "Graduate Student",
-        photo: "images/members/PavlosP/IMG_1167.JPG",
+        photo: "/images/members/PavlosP/IMG_1167.JPG",
         bio: "Pavlos is working on bio-inspired and spiking neural networks. His research focuses on developing computational models that mimic biological neural systems and exploring the potential of neuromorphic computing approaches. He is co-supervised with <a href='https://archimedesai.gr/en/researchers/themos-stafylakis' target='_blank' style='color: #3498db; text-decoration: none;'>Themos Stafylakis, Archimedes AI</a>.",
         expertise: ["Bio-inspired Neural Networks", "Spiking Neural Networks", "Neuromorphic Computing", "Computational Modeling", "Machine Learning"],
         education: "Currently pursuing PhD in Computational Neuroscience",
@@ -139,7 +139,7 @@ const teamMembers = {
     dianna: {
         name: "Dianna Hidalgo",
         title: "Graduate Student",
-        photo: "images/members/missing_member/missing_member.png",
+        photo: "/images/members/missing_member/missing_member.png",
         bio: "Dianna is a graduate student working on computational neuroscience research. She is co-supervised with <a href='https://klab.tch.harvard.edu/' target='_blank' style='color: #3498db; text-decoration: none;'>Gabriel Kreiman, Harvard Medical School</a>.",
         expertise: ["Computational Neuroscience", "Neural Systems", "Research Methods", "Data Analysis"],
         education: "Graduate Student",
@@ -164,7 +164,7 @@ const projectData = {
             "High-performance computing"
         ],
         tags: ["Single-Cell", "Transcriptomics", "Electrophysiology", "Computational Modeling"],
-        image: "images/projects/growing-cells/growing-cells.png"
+        image: "/images/projects/growing-cells/growing-cells.png"
     },
     "brain-circuit": {
         title: "Foundational models of brain circuits",
@@ -178,7 +178,7 @@ const projectData = {
             "Behavioral correlation studies"
         ],
         tags: ["Computational Neuroscience", "Human Brain", "Multi-modal Data", "Circuit Modeling"],
-        image: "images/projects/brain-circuit/brain-circuit.png"
+        image: "/images/projects/brain-circuit/brain-circuit.png"
     },
     "disease-modeling": {
         title: "Brain Disease Modeling",
@@ -193,7 +193,7 @@ const projectData = {
             "Clinical correlation studies"
         ],
         tags: ["Epilepsy", "Disease Modeling", "Human Tissue", "Therapeutic Development"],
-        image: "images/banner/banner_detail.png"
+        image: "/images/banner/banner_detail.png"
     },
     "monitoring-modulation": {
         title: "Monitoring and Modulation Technologies",
@@ -207,7 +207,7 @@ const projectData = {
             "Clinical translation strategies"
         ],
         tags: ["Stimulation", "Neuromodulation", "Real-time Monitoring"],
-        image: "images/projects/brain-tech/brain-tech.png"
+        image: "/images/projects/brain-tech/brain-tech.png"
     },
     "neuroai": {
         title: "Biophysics-informed ML & NeuroAI",
@@ -222,7 +222,7 @@ const projectData = {
             "Computational tool development"
         ],
         tags: ["Machine Learning", "AI", "Biophysics", "Neural Computation"],
-        image: "images/banner/banner_detail.png"
+        image: "/images/banner/banner_detail.png"
     }
 };
 
@@ -380,7 +380,7 @@ function showProjectModal(projectInfo) {
         console.log('Matched neuroai project, showing special content');
         additionalContent = `
             <div class="project-modal-image">
-                <img src="images/projects/biophysML/signals-systems-psyche.png" alt="Signals, systems and psyche" onerror="this.style.display='none'" onload="console.log('Image loaded successfully:', this.src)">
+                <img src="/images/projects/biophysML/signals-systems-psyche.png" alt="Signals, systems and psyche" onerror="this.style.display='none'" onload="console.log('Image loaded successfully:', this.src)">
                 <p class="project-citation">
                     from '<a href="https://library.oapen.org/bitstream/handle/20.500.12657/28023/1001973.pdf?sequence=1#page=116" target="_blank" style="color: #3498db; text-decoration: none;">Signals, systems and psyche</a>' written together with Adam Shai
                 </p>
