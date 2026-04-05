@@ -237,6 +237,29 @@
         log('JS ERROR: ' + e.message + ' @ ' + (e.filename||'?') + ':' + (e.lineno||'?'));
       });
       log('listeners attached. project-card count: ' + document.querySelectorAll('.project-card').length);
+
+      // Log when DOMContentLoaded fires and show DOM state after script.js runs
+      document.addEventListener('DOMContentLoaded', function(){
+        log('DOMContentLoaded fired');
+        log('#projectModal exists: ' + !!document.getElementById('projectModal'));
+        log('#projectModalContent exists: ' + !!document.getElementById('projectModalContent'));
+      });
+
+      // Bubble-phase delegated handler: fires AFTER any per-card click listener
+      // attached by script.js, so we can see if our click continues through the chain.
+      document.addEventListener('click', function(e){
+        var card = e.target.closest && e.target.closest('.project-card');
+        if(card){
+          var id = card.getAttribute('data-project');
+          var modal = document.getElementById('projectModal');
+          log('BUBBLE card click: id=' + id + ' modal.display=' + (modal ? modal.style.display || '(empty)' : '(no modal)'));
+          // Try opening the modal manually as a test
+          if(modal){
+            modal.style.display = 'block';
+            log('DIAG: manually set modal.display=block');
+          }
+        }
+      }, false);
     })();
     </script>
 </body>
