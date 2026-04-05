@@ -155,7 +155,7 @@ const projectData = {
         title: "Growing Cells in Computers",
         icon: "fas fa-dna",
         description: "Comprehensive analysis of individual neuron properties and their role in neural circuit function and disease mechanisms.",
-        longDescription: “Building biophysically detailed neuron models constrained by multimodal data sets (patch-clamp electrophysiology, morphological reconstructions, single-cell transcriptomics, etc.). Using evolutionary and gradient-based optimization to generate models across cell types to create digital twins of biological neurons.”,
+        longDescription: "Building biophysically detailed neuron models constrained by multimodal data sets (patch-clamp electrophysiology, morphological reconstructions, single-cell transcriptomics, etc.). Using evolutionary and gradient-based optimization to generate models across cell types to create digital twins of biological neurons.",
         details: [
             "Single-cell electrophysiology",
             "Morphology reconstructions",
