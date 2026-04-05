@@ -22,6 +22,7 @@ This is where we setup the website of the Anastassiou Lab at Cedars-Sinai Medica
 
 ### **Modal System**
 - **Team member modals** - Detailed profiles with photos and bios
+- **Project modals** - Expanded research descriptions with images and focus areas
 - **Job opportunity modals** - Expanded job descriptions and requirements
 - **Click outside or press Escape** to close modals
 
@@ -123,7 +124,7 @@ const teamMembers = {
     newmember: {
         name: "Dr. New Member",
         title: "Research Scientist",
-        photo: "path/to/photo.jpg",
+        photo: "/images/members/NewMember/photo.jpg",
         bio: "Member biography...",
         expertise: ["Skill 1", "Skill 2"],
         education: "Education details...",
@@ -135,12 +136,12 @@ const teamMembers = {
 };
 ```
 
-Then add the corresponding HTML in `index.html`:
+Then add the corresponding HTML in `team/index.html`:
 
 ```html
 <div class="team-member" data-member="newmember">
     <div class="member-photo">
-        <img src="path/to/photo.jpg" alt="Dr. New Member">
+        <img src="/images/members/NewMember/photo.jpg" alt="Dr. New Member">
     </div>
     <div class="member-info">
         <h3>Dr. New Member</h3>
@@ -213,7 +214,7 @@ The website is fully responsive and includes:
 ### **Browser Support**
 - **Chrome** (latest) ✅
 - **Firefox** (latest) ✅ 
-- **Safari** (latest) ✅
+- **Safari** (latest, including iOS mobile) ✅
 - **Edge** (latest) ✅
 
 
