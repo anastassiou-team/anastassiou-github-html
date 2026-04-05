@@ -216,6 +216,21 @@
       var log = function(msg){
         dbg.textContent = msg + "\n" + dbg.textContent;
       };
+      // Forward script.js's console output into the visible banner
+      var origLog = console.log, origErr = console.error;
+      console.log = function(){
+        var args = Array.prototype.slice.call(arguments);
+        log('LOG: ' + args.map(function(a){
+          try { return typeof a === 'object' ? JSON.stringify(a).slice(0,80) : String(a); }
+          catch(e){ return '[obj]'; }
+        }).join(' '));
+        origLog.apply(console, arguments);
+      };
+      console.error = function(){
+        var args = Array.prototype.slice.call(arguments);
+        log('ERR: ' + args.map(function(a){ try { return String(a); } catch(e){ return '[obj]'; } }).join(' '));
+        origErr.apply(console, arguments);
+      };
       var describe = function(el){
         if(!el) return '(null)';
         var t = el.tagName.toLowerCase();
