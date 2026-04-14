@@ -4,27 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found — Anastassiou Lab</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="/images/logo/ateam_logo_ppt_v3_favicon.svg">
+    <link rel="stylesheet" href="/styles.css?v=2.6">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
-        // Redirect legacy anchor URLs to new routes
-        var defined = ['team','projects','publications','methods','jobs','contact'];
-        var hash = window.location.hash.replace('#','');
-        if (defined.indexOf(hash) !== -1) {
-            window.location.replace('/' + hash);
-        } else {
-            // Redirect to home after 3 seconds
-            setTimeout(function() { window.location.replace('/'); }, 3000);
-        }
+        // Legacy anchor URLs (e.g. /#team) → new routes (/team).
+        // Hash isn't sent to the server, so this only fires when a real 404 page
+        // also happens to carry a known hash. Safe to keep — improves continuity
+        // for any old bookmarks. No automatic redirect otherwise.
+        (function () {
+            var defined = ['team','projects','publications','methods','jobs','contact'];
+            var hash = window.location.hash.replace('#','');
+            if (defined.indexOf(hash) !== -1) {
+                window.location.replace('/' + hash);
+            }
+        })();
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f8f9fa; color: #333; }
-        .container { text-align: center; }
-        a { color: #3498db; }
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f8f9fa;
+            color: #2c3e50;
+            padding: 20px;
+        }
+        .container { text-align: center; max-width: 560px; }
+        h1 { font-size: 4rem; margin: 0 0 0.5rem; color: #2c3e50; }
+        h2 { font-size: 1.5rem; margin: 0 0 1.5rem; font-weight: 500; color: #34495e; }
+        p { font-size: 1rem; line-height: 1.6; color: #555; margin-bottom: 2rem; }
+        .links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+        .links a {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .links a:hover { background: #1a252f; }
+        .links a.secondary { background: transparent; color: #2c3e50; border: 1px solid #2c3e50; }
+        .links a.secondary:hover { background: #2c3e50; color: #fff; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Page Not Found</h1>
-        <p>Redirecting to <a href="/">home page</a>...</p>
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>The page you're looking for doesn't exist or may have been moved. Use one of the links below to find what you need.</p>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/team" class="secondary">Team</a>
+            <a href="/projects" class="secondary">Projects</a>
+            <a href="/publications" class="secondary">Publications</a>
+            <a href="/methods" class="secondary">Methods</a>
+            <a href="/jobs" class="secondary">Jobs</a>
+            <a href="/contact" class="secondary">Contact</a>
+        </div>
     </div>
 </body>
 </html>
