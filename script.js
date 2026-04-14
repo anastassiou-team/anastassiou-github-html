@@ -442,12 +442,12 @@ const observer = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
     // Redirect legacy anchor URLs to new routes
     const anchorRedirects = {
-        '#team': '/team',
-        '#projects': '/projects',
-        '#publications': '/publications',
-        '#methods': '/methods',
-        '#jobs': '/jobs',
-        '#contact': '/contact',
+        '#team': '/team/',
+        '#projects': '/projects/',
+        '#publications': '/publications/',
+        '#methods': '/methods/',
+        '#jobs': '/jobs/',
+        '#contact': '/contact/',
         '#home': '/'
     };
     const hash = window.location.hash;

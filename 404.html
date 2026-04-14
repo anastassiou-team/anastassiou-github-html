@@ -17,7 +17,7 @@
             var defined = ['team','projects','publications','methods','jobs','contact'];
             var hash = window.location.hash.replace('#','');
             if (defined.indexOf(hash) !== -1) {
-                window.location.replace('/' + hash);
+                window.location.replace('/' + hash + '/');
             }
         })();
     </script>
@@ -60,12 +60,12 @@
         <p>The page you're looking for doesn't exist or may have been moved. Use one of the links below to find what you need.</p>
         <div class="links">
             <a href="/">Home</a>
-            <a href="/team" class="secondary">Team</a>
-            <a href="/projects" class="secondary">Projects</a>
-            <a href="/publications" class="secondary">Publications</a>
-            <a href="/methods" class="secondary">Methods</a>
-            <a href="/jobs" class="secondary">Jobs</a>
-            <a href="/contact" class="secondary">Contact</a>
+            <a href="/team/" class="secondary">Team</a>
+            <a href="/projects/" class="secondary">Projects</a>
+            <a href="/publications/" class="secondary">Publications</a>
+            <a href="/methods/" class="secondary">Methods</a>
+            <a href="/jobs/" class="secondary">Jobs</a>
+            <a href="/contact/" class="secondary">Contact</a>
         </div>
     </div>
 </body>
