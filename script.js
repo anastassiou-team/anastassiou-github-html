@@ -662,7 +662,7 @@ const publications = [
     },
     {
         title: "Cell-class-specific electric field entrainment of neural activity",
-        authors: "Lee, S.Y., et al.",
+        authors: "Lee, S.Y., Kozalakis, K., Baftizadeh, F., Campagnola, L., Jarsky, T., Koch, C., Anastassiou, C.A.",
         journal: "Neuron",
         year: "2024",
         doi: "10.1016/j.neuron.2023.02.014",
@@ -678,7 +678,7 @@ const publications = [
     },
     {
         title: "Associations between in vitro, in vivo and in silico cell classes in mouse primary visual cortex",
-        authors: "Wei, Y., et al.",
+        authors: "Wei, Y., Nandi, A., Jia, X., Siegle, J.H., Denman, D., Lee, S.Y., Buchin, A., Van Geit, W., Mosher, C.P., Olsen, S., Anastassiou, C.A.",
         journal: "Nature Communications",
         year: "2023",
         doi: "10.1038/s41467-023-42340-0",
@@ -688,7 +688,7 @@ const publications = [
     },
     {
         title: "Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types",
-        authors: "Nandi, A., et al.",
+        authors: "Nandi, A., Chartrand, T., Van Geit, W., Buchin, A., Yao, Z., Lee, S.Y., Wei, Y., Kalmbach, B., Lee, B., Lein, E., Berg, J., Sümbül, U., Koch, C., Tasic, B., Anastassiou, C.A.",
         journal: "Cell Reports",
         year: "2022",
         doi: "10.1016/j.celrep.2022.111719",
@@ -702,7 +702,7 @@ const publications = [
     },
     {
         title: "Multi-modal characterization and simulation of human epileptic circuitry",
-        authors: "Buchin, A., et al.",
+        authors: "Buchin, A., de Frates, R., Nandi, A., Mann, R., Chong, P., Ng, L., Miller, J., Hodge, R., Kalmbach, B., Bose, S., Rutishauser, U., McConoughey, S., Lein, E., Berg, J., Sorensen, S., Gwinn, R., Koch, C., Ting, J., Anastassiou, C.A.",
         journal: "Cell Reports",
         year: "2022",
         doi: "10.1016/j.celrep.2022.111719",
@@ -723,7 +723,7 @@ const publications = [
     },
     {
         title: "Structure and function of axo-axonic inhibition",
-        authors: "Schneider-Mizell, C.M., et al.",
+        authors: "Schneider-Mizell, C.M., Bodor, A.L., Collman, F., Brittain, D., Bleckert, A., Dorkenwald, S., Turner, N.L., Macrina, T., Lee, K., Lu, R., Wu, J., Zhuang, J., Nandi, A., Hu, B., Buchanan, J., Takeno, M.M., Torres, R., Mahalingam, G., Bumbarger, D.J., Li, Y., Chartrand, T., Kemnitz, N., Silversmith, W.M., Ih, D., Zung, J., Zlateski, A., Tartavull, I., Popovych, S., Wong, W., Castro, M., Jordan, C.S., Froudarakis, E., Becker, L., Suckow, S., Reimer, J., Tolias, A.S., Anastassiou, C.A., Seung, H.S., Reid, R.C., da Costa, N.M.",
         journal: "eLife",
         year: "2021",
         doi: "10.7554/eLife.73783",
@@ -732,7 +732,7 @@ const publications = [
     },
     {
         title: "Cellular classes in the human brain revealed in vivo by heartbeat-related modulation of the extracellular action potential waveform",
-        authors: "Mosher, C.P., et al.",
+        authors: "Mosher, C.P., Wei, Y., Kamiński, J., Nandi, A., Mamelak, A.N., Anastassiou, C.A., Rutishauser, U.",
         journal: "Cell Reports",
         year: "2020",
         doi: "10.1016/j.celrep.2020.02.027",
@@ -768,7 +768,7 @@ const publications = [
     },
     {
         title: "From Maxwell's equations to the theory of current-source density analysis",
-        authors: "Gratiy, S.L., et al.",
+        authors: "Gratiy, S.L., Halnes, G., Denman, D., Hawrylycz, M.J., Koch, C., Einevoll, G.T., Anastassiou, C.A.",
         journal: "European Journal of Neuroscience",
         year: "2017",
         doi: "10.1111/ejn.13534",
@@ -777,7 +777,7 @@ const publications = [
     },
     {
         title: "Local field potentials encode place cell ensemble activation during hippocampal sharp wave ripples",
-        authors: "Taxidis, J., et al.",
+        authors: "Taxidis, J., Anastassiou, C.A., Diba, K., Koch, C.",
         journal: "Neuron",
         year: "2015",
         doi: "10.1016/j.neuron.2015.09.014",
@@ -795,7 +795,7 @@ const publications = [
     },
     {
         title: "Cell type- and activity-dependent extracellular correlates of intracellular spiking",
-        authors: "Anastassiou, C.A., et al.",
+        authors: "Anastassiou, C.A., Perin, R., Buzsáki, G., Markram, H., Koch, C.",
         journal: "Journal of Neurophysiology",
         year: "2015",
         doi: "10.1152/jn.00628.2014",
@@ -825,7 +825,7 @@ const publications = [
     },
     {
         title: "The origin of extracellular fields and currents—EEG, ECoG, LFP and spikes",
-        authors: "Buzsáki, G., et al.",
+        authors: "Buzsáki, G., Anastassiou, C.A., Koch, C.",
         journal: "Nature Reviews Neuroscience",
         year: "2012",
         doi: "10.1038/nrn.2012.86",
@@ -834,7 +834,7 @@ const publications = [
     },
     {
         title: "The spiking component of oscillatory extracellular potentials in the rat hippocampus",
-        authors: "Schomburg, E.W., et al.",
+        authors: "Schomburg, E.W., Anastassiou, C.A., Buzsáki, G., Koch, C.",
         journal: "Journal of Neuroscience",
         year: "2012",
         doi: "10.1523/JNEUROSCI.0656-12.2012",
@@ -843,7 +843,7 @@ const publications = [
     },
     {
         title: "Ephaptic coupling of cortical neurons",
-        authors: "Anastassiou, C.A.*, Perin, R.*, et al.",
+        authors: "Anastassiou, C.A.*, Perin, R.*, Markram, H., Koch, C.",
         journal: "Nature Neuroscience",
         year: "2011",
         doi: "10.1038/nn.4153",
@@ -859,7 +859,7 @@ const publications = [
     },
     {
         title: "The effect of spatially inhomogeneous extracellular electric fields on neurons",
-        authors: "Anastassiou, C.A., et al.",
+        authors: "Anastassiou, C.A., Montgomery, S.M., Barahona, M., Buzsáki, G., Koch, C.",
         journal: "Journal of Neuroscience",
         year: "2010",
         doi: "10.1523/JNEUROSCI.3635-09.2010",
