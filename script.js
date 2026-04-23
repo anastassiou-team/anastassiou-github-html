@@ -650,7 +650,7 @@ const publications = [
     {
         title: "NOBLE: Neural Operator with Biologically-informed Latent Embeddings to Capture Experimental Variability in Biological Neuron Models",
         authors: "Ghafourpour, L., Duruisseaux, V., Tolooshams, B., Wong, P., Anastassiou, C.A., Anandkumar, A.",
-        journal: "NeurIPS 2025",
+        journal: "Advances in Neural Information Processing Systems 38 (NeurIPS 2025)",
         year: "2025",
         link: "https://neurips.cc/virtual/2025/loc/san-diego/poster/119267",
         pressCoverage: [
