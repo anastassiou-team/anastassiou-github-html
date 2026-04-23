@@ -648,6 +648,19 @@ window.addEventListener('scroll', () => {
 // Publications data
 const publications = [
     {
+        title: "NOBLE: Neural Operator with Biologically-informed Latent Embeddings to Capture Experimental Variability in Biological Neuron Models",
+        authors: "Ghafourpour, L., Duruisseaux, V., Tolooshams, B., Wong, P., Anastassiou, C.A., Anandkumar, A.",
+        journal: "NeurIPS 2025",
+        year: "2025",
+        link: "https://neurips.cc/virtual/2025/loc/san-diego/poster/119267",
+        pressCoverage: [
+            "https://www.cedars-sinai.org/newsroom/research-tip-sheet-liver-cancer-trends--ai-in-science-testing/",
+            "https://www.eas.caltech.edu/news/modeling-neurons-with-the-help-of-ai",
+            "https://medicalxpress.com/news/2025-12-ai-framework-brain-neuron.html"
+        ],
+        abstract: "A neural operator framework that learns mappings from a continuous frequency-modulated embedding of interpretable neuron features to the somatic voltage response. Trained on synthetic data from biophysically realistic models, NOBLE predicts distributions that capture experimental variability and achieves a 4200× speedup over the numerical solver."
+    },
+    {
         title: "Cell-class-specific electric field entrainment of neural activity",
         authors: "Lee, S.Y., et al.",
         journal: "Neuron",
