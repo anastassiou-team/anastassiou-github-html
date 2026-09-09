@@ -158,6 +158,17 @@ const teamMembers = {
         email: "",
         publications: "Undergraduate research in computational neuroscience"
     },
+    ziheng: {
+        name: "Ziheng Wang",
+        title: "Tsinghua-Cedars Graduate Fellow",
+        photo: "/images/members/missing_member/missing_member.png",
+        bio: "Ziheng Wang is a Tsinghua-Cedars Graduate Fellow, joining the lab for a two-year full-time research experience through the <a href='https://www.cedars-sinai.org/discoveries/cedars-sinai-tsinghua-university-collaborate-for-impact.html' target='_blank' style='color: #3498db; text-decoration: none;'>Cedars-Sinai and Tsinghua Medicine collaboration</a>. A medical student in Tsinghua University's eight-year MD program, he joined the Anastassiou lab in Los Angeles after completing his preclinical training in Beijing. His work centers on human brain slice electrophysiology and on the experimental development of next-generation brain stimulation protocols, connecting cell-type-specific responses to electric fields with the design of precise neuromodulation therapies. His long-term goal is to train as a neurosurgeon-scientist bridging mechanistic discovery with clinical practice.",
+        expertise: ["Human Brain Slice Physiology", "Whole-Cell Patch Clamp", "Neuromodulation", "Systems Neuroscience", "Molecular Biology"],
+        education: "Eight-year MD Program, Tsinghua University School of Medicine",
+        research: "Human brain slice electrophysiology, Next-generation brain stimulation protocols, Cell-type-specific responses to electric fields",
+        email: "",
+        publications: "Research trainee in human brain slice physiology and neuromodulation"
+    },
     dianna: {
         name: "Dianna Hidalgo",
         title: "Graduate Student",
