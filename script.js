@@ -83,12 +83,12 @@ const teamMembers = {
     },
     zeynep: {
         name: "Zeynep Goktepe",
-        title: "Undergraduate Researcher",
+        title: "Research Support Assistant",
         photo: "/images/members/ZeynepG/image_9-19-23_at_17.26_720.jpg",
-        bio: "Zeynep Goktepe is an undergraduate researcher and Caltech sophomore working on multimodal cellular data modeling using gradient-based methods.",
-        expertise: ["Multimodal Cellular Data", "Gradient-Based Methods", "Computational Modeling", "Data Analysis"],
+        bio: "Zeynep Goktepe is a Caltech junior and Research Support Assistant in the lab, working on surrogate models of human cellular data spanning cell types.",
+        expertise: ["Surrogate Modeling", "Multimodal Cellular Data", "Computational Modeling", "Data Analysis"],
         education: "Undergraduate Researcher, California Institute of Technology",
-        research: "Multimodal cellular data modeling using gradient-based methods",
+        research: "Surrogate models of human cellular data spanning cell types",
         email: "",
         publications: "Undergraduate research in computational neuroscience"
     },
@@ -135,6 +135,28 @@ const teamMembers = {
         research: "Bio-inspired and spiking neural networks, Neuromorphic computing, Computational neuroscience modeling",
         email: "pavlos.poulos@cshs.org",
         publications: "Research in bio-inspired neural network architectures"
+    },
+    ryan: {
+        name: "Ryan Shahbaba",
+        title: "Research Support Assistant",
+        photo: "/images/members/RyanShahbaba/1761596238471.jpeg",
+        bio: "Ryan Shahbaba is a Caltech undergraduate and Research Support Assistant in the lab, working on a neuroAI project at the interface between cellular biophysics and extracellular dynamics. His work examines how intracellular dynamics in human neurons are reflected in their extracellular signature, and develops machine learning methods to classify units recorded in vivo in the human brain by cell class, type, and subtype. These tools aim to map the cell type composition of the human brain onto how functions such as memory are supported by and emerge from heterogeneous human brain circuits.",
+        expertise: ["NeuroAI", "Cellular Biophysics", "Extracellular Electrophysiology", "Machine Learning", "Cell Type Classification"],
+        education: "Undergraduate Researcher, California Institute of Technology",
+        research: "NeuroAI at the interface of cellular biophysics and extracellular dynamics, Extracellular signatures of human neuronal intracellular dynamics, ML-based cell class, type, and subtype classification of human in vivo units",
+        email: "",
+        publications: "Undergraduate research in neuroAI and computational neuroscience"
+    },
+    pranati: {
+        name: "Pranati Chintada",
+        title: "Undergraduate Researcher",
+        photo: "/images/members/missing_member/missing_member.png",
+        bio: "Pranati Chintada is an undergraduate researcher and Caltech sophomore working on cell type identification in human brain tissue. A central limitation of human tissue experiments is that the genetic tools used to mark cell types in model organisms are unavailable, leaving the identity of patch-clamped neurons unknown. Pranati addresses this by extracting electrophysiological features from the lab's human patch-clamp recordings and mapping them onto the largest public human reference repositories — the <a href='https://celltypes.brain-map.org/data?donor__species=Homo%20Sapiens' target='_blank' style='color: #3498db; text-decoration: none;'>Allen Institute human morphoelectric data set</a> and the triple-modality Patch-seq data set. The work spans accessing the raw experiments in these resources, extracting features from selected sweeps, training classifiers that map those features onto cell class and type identifiers, and applying the trained classifiers to the lab's own recordings to assign labels. Ground-truth validation — training on the morphoelectric data set and predicting held-out Patch-seq cells, whose class and type labels are known — benchmarks the approach, offering a way to characterize the lab's experiments against the largest human electrophysiology repository available.",
+        expertise: ["Patch-Clamp Electrophysiology", "Feature Extraction", "Machine Learning", "Cell Type Classification", "Allen Institute Data Sets"],
+        education: "Undergraduate Researcher, California Institute of Technology",
+        research: "Electrophysiological feature extraction from human patch-clamp recordings, Classifier-based cell class and type assignment, Mapping lab recordings onto Allen Institute human reference data sets",
+        email: "",
+        publications: "Undergraduate research in computational neuroscience"
     },
     dianna: {
         name: "Dianna Hidalgo",
