@@ -161,7 +161,7 @@ const teamMembers = {
     ziheng: {
         name: "Ziheng Wang",
         title: "Tsinghua-Cedars Graduate Fellow",
-        photo: "/images/members/missing_member/missing_member.png",
+        photo: "/images/members/ZihengW/headshot.jpg",
         bio: "Ziheng Wang is a Tsinghua-Cedars Graduate Fellow, joining the lab for a two-year full-time research experience through the <a href='https://www.cedars-sinai.org/discoveries/cedars-sinai-tsinghua-university-collaborate-for-impact.html' target='_blank' style='color: #3498db; text-decoration: none;'>Cedars-Sinai and Tsinghua Medicine collaboration</a>. A medical student in Tsinghua University's eight-year MD program, he joined the Anastassiou lab in Los Angeles after completing his preclinical training in Beijing. His work centers on human brain slice electrophysiology and on the experimental development of next-generation brain stimulation protocols, connecting cell-type-specific responses to electric fields with the design of precise neuromodulation therapies. His long-term goal is to train as a neurosurgeon-scientist bridging mechanistic discovery with clinical practice.",
         expertise: ["Human Brain Slice Physiology", "Whole-Cell Patch Clamp", "Neuromodulation", "Systems Neuroscience", "Molecular Biology"],
         education: "Eight-year MD Program, Tsinghua University School of Medicine",
@@ -518,15 +518,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Highlight active nav link based on current page path
-    const currentPath = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        const href = link.getAttribute('href');
-        const linkPath = href.replace(/\/$/, '') || '/';
-        if (linkPath === currentPath) {
-            link.classList.add('active');
+    // Highlight active nav link based on current page path, and on the section
+    // currently in view for links that point at an anchor on this page
+    const normalizePath = path => path.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
+    const currentPath = normalizePath(window.location.pathname);
+    const navLinks = Array.from(document.querySelectorAll('.nav-menu a'));
+
+    // Links pointing at this page, keyed by their anchor ('' for the page itself)
+    const samePageLinks = new Map();
+    navLinks.forEach(link => {
+        const [path, hash] = link.getAttribute('href').split('#');
+        if (normalizePath(path) === currentPath) {
+            samePageLinks.set(hash || '', link);
         }
     });
+
+    function updateActiveNav() {
+        let activeLink = samePageLinks.get('') || null;
+        samePageLinks.forEach((link, hash) => {
+            if (!hash) return;
+            const section = document.getElementById(hash);
+            if (!section) return;
+            const top = section.offsetTop - 90;
+            const bottom = top + section.offsetHeight;
+            if (window.scrollY >= top && window.scrollY < bottom) {
+                activeLink = link;
+            }
+        });
+        // Exactly one nav link is highlighted at a time
+        navLinks.forEach(link => link.classList.toggle('active', link === activeLink));
+    }
+
+    updateActiveNav();
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    window.addEventListener('hashchange', updateActiveNav);
     
     // Navbar background change on scroll
     window.addEventListener('scroll', () => {
