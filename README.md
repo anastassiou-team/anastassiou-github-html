@@ -31,7 +31,7 @@ This is where we setup the website of the Anastassiou Lab at Cedars-Sinai Medica
 2. **About** - Lab mission and research focus with question-driven approach
 3. **Research Highlights Banner** - Visual showcase of key findings
 4. **Team Members** - Interactive member profiles with modal windows
-5. **Projects** - Research project showcase with 5 main areas
+5. **Projects** - Research project showcase with 6 main areas
 6. **Publications** - Recent research outputs with press coverage links
 7. **Methods** - Software tools and computational methods
 8. **Jobs** - Current job opportunities with modal details
@@ -176,9 +176,10 @@ To add a new section:
 
 ### **Projects Section**
 
-The Projects section showcases 5 main research areas:
+The Projects section showcases 6 main research areas:
 - Growing Cells in Computers
 - Brain Circuit Simulations  
+- Human Brain Slice Physiology
 - Brain Disease Modeling
 - Brain Modulation Technologies
 - Biophysics-informed ML & NeuroAI
