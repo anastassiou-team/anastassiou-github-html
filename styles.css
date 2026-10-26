@@ -146,7 +146,6 @@ body {
 /* Hero Section */
 .hero {
     min-height: 70vh;
-    background: url('images/neuralis/neuralis_1.png') center/cover no-repeat fixed;
     display: flex;
     align-items: center;
     padding-top: 70px;
@@ -154,12 +153,22 @@ body {
     overflow: hidden;
 }
 
+/* Biocytin-filled human neurons over the red gradient.
+   The texture is built by tools/banner/build_banner.py. */
 .hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(220, 38, 38, 0.75) 0%, rgba(153, 27, 27, 0.75) 100%);
+    background:
+        url('images/neurons/hero-neurons.webp') center/cover no-repeat,
+        linear-gradient(135deg, rgba(220, 38, 38, 0.75) 0%, rgba(153, 27, 27, 0.75) 100%);
     z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .hero::before {
+        background-position: 30% center, 0 0;
+    }
 }
 
 /* Animation Container */
