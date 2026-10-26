@@ -213,6 +213,21 @@ const projectData = {
         tags: ["Computational Neuroscience", "Human Brain", "Multi-modal Data", "Circuit Modeling"],
         image: "/images/projects/brain-circuit/brain-circuit.png"
     },
+    "human-slice": {
+        title: "Human Brain Slice Physiology",
+        icon: "fas fa-microscope",
+        description: "Recording from living human cortical slices to understand how single cells and cell types organize human cortical circuits.",
+        longDescription: "Working with Cedars-Sinai neurosurgeons, we record from living human cortical slices obtained as a byproduct of therapeutic neurosurgery. Simultaneous intracellular and extracellular recordings from identified neurons, combined with morphology reconstruction and cell-type mapping to reference data sets, reveal how single cells and cell types organize human cortical circuit activity. Bio-realistic human circuit models generate predictions that we test directly in the slices.",
+        details: [
+            "Living human neocortical slices",
+            "Paired intracellular and extracellular recordings",
+            "Cell-type identification via morphology and patch-seq mapping",
+            "Model-driven perturbation experiments",
+            "Open data and code"
+        ],
+        tags: ["Human Tissue", "Patch-clamp", "Circuit Organization", "Extracellular Recordings"],
+        image: "/images/neurons/hero-neurons.webp"
+    },
     "disease-modeling": {
         title: "Brain Disease Modeling",
         icon: "fas fa-virus",
