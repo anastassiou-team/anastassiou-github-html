@@ -226,7 +226,7 @@ const projectData = {
             "Open data and code"
         ],
         tags: ["Human Tissue", "Patch-clamp", "Circuit Organization", "Extracellular Recordings"],
-        image: "/images/neurons/hero-neurons.webp"
+        image: "/images/projects/human-slice/human-slice-pair.webp"
     },
     "disease-modeling": {
         title: "Brain Disease Modeling",
