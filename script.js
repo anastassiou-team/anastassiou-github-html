@@ -430,7 +430,7 @@ function showProjectModal(projectInfo) {
             <div class="project-modal-image">
                 <img src="/images/projects/biophysML/signals-systems-psyche.png" alt="Signals, systems and psyche" onerror="this.style.display='none'" onload="console.log('Image loaded successfully:', this.src)">
                 <p class="project-citation">
-                    from '<a href="https://library.oapen.org/bitstream/handle/20.500.12657/28023/1001973.pdf?sequence=1#page=116" target="_blank" style="color: #3498db; text-decoration: none;">Signals, systems and psyche</a>' written together with Adam Shai
+                    from '<a href="https://library.oapen.org/bitstream/handle/20.500.12657/28023/1001973.pdf?sequence=1#page=116" target="_blank" style="color: #3498db; text-decoration: none;">Signals, systems and psyche</a>' written together with <a href="https://www.linkedin.com/in/adam-shai-87542a50/" target="_blank" rel="noopener" style="color: #3498db; text-decoration: none;">Adam Shai</a>
                 </p>
             </div>
         `;
