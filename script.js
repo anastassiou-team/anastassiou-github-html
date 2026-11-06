@@ -258,7 +258,7 @@ const projectData = {
         image: "/images/projects/brain-tech/brain-tech.png"
     },
     "neuroai": {
-        title: "BiophysicalAI",
+        title: "Biophysical AI",
         icon: "fas fa-robot",
         description: "Development of biophysics-informed artificial intelligence approaches for understanding neural computation and brain function.",
         longDescription: "As powerful as the human brain is, its structure is constrained by physics and biology rules that shape its function. The powerful machine learning systems of today do not follow such rules. We study how the rules and constraints imposed on the most efficient computer known to man, the human brain, can inspire new computational paradigms and topologies.",
@@ -424,7 +424,7 @@ function showProjectModal(projectInfo) {
     let additionalContent = '';
     
     // Add special content for the neuroai project
-    if (projectInfo.title === 'BiophysicalAI') {
+    if (projectInfo.title === 'Biophysical AI') {
         console.log('Matched neuroai project, showing special content');
         additionalContent = `
             <div class="project-modal-image">

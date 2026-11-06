@@ -177,7 +177,7 @@ To add a new section:
 ### **Projects Section**
 
 The Projects section showcases 6 main research areas:
-- BiophysicalAI
+- Biophysical AI
 - Growing Cells in Computers
 - Foundation models of the brain
 - Human Brain Slice Physiology
