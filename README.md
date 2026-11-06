@@ -177,12 +177,12 @@ To add a new section:
 ### **Projects Section**
 
 The Projects section showcases 6 main research areas:
+- BiophysicalAI
 - Growing Cells in Computers
-- Brain Circuit Simulations  
+- Foundation models of the brain
 - Human Brain Slice Physiology
 - Brain Disease Modeling
-- Brain Modulation Technologies
-- Biophysics-informed ML & NeuroAI
+- Monitoring and Modulation Technologies
 
 ### **Methods Section**
 
